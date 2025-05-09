@@ -11,35 +11,29 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-
-
 public class EnemyFollowPlayer : MonoBehaviour
-{
+{   
     public float speed = 1.5f;
     public float followRadius = 5f;
-    public GameObject player;
 
+    public GameObject player;
+    
     void Start()
     {
         player = GameObject.FindWithTag("Player");
     }
 
+    //This code is used to make enemies follow the player once they come close enough to trigger the following behavior.
+    //Reference: https://www.youtube.com/watch?v=D0tjzZEwaAg
     void Update()
     {
-        // Check if the player still exists before accessing it
-        if (player != null)
-        {
-            float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
 
-            if (distanceToPlayer <= followRadius)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            }
-        }
-        else
-        {
-            // Optionally re-acquire the player if it's been destroyed and respawned
-            player = GameObject.FindWithTag("Player");
-        }
+        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+
+    if (distanceToPlayer <= followRadius)
+    {
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+    }
     }
 }

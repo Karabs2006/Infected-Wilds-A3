@@ -135,7 +135,7 @@ public class Player : MonoBehaviour
             else if (PlayerHealth <= 0)//When the Player's health reaches 0, they will be given the option to Restart or Quit
             {
             
-                Destroy(gameObject);
+                
 
                 SceneManager.LoadScene("GameOverScreen");
         
@@ -157,7 +157,7 @@ public class Player : MonoBehaviour
             else if (PlayerHealth <= 0)//When the Player's health reaches 0, they will be given the option to Restart or Quit
             {
             
-                Destroy(gameObject);
+            
 
                 SceneManager.LoadScene("GameOverScreen");
         
