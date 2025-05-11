@@ -143,6 +143,7 @@ public class Player : MonoBehaviour
         _rigidbody.linearVelocity = movePosition.normalized*_speed;
         _animator.SetBool("IsMoving", movePosition != Vector3.zero); //Script for Movement. When the player releases a movement key, the movement animation will stop playing
 
+        
     }
     
     void OnCollisionEnter2D(Collision2D collision)//This is a basic script for enemy attacks
