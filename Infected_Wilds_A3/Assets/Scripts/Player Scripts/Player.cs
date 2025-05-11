@@ -44,8 +44,18 @@ public class Player : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
     public float bulletSpeed = 20f;
+
+    private Animator _animator;
+
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+        
+    }
     
-    
+
+
     void Start()
     {
         myText.text = $"{PlayerHealth}";
@@ -97,26 +107,41 @@ public class Player : MonoBehaviour
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
             
             movePosition.y += 1; //The Player moves upwards
+            _animator.SetBool("IsMoving", true);
         }
+        
+        else
+        {
+              _animator.SetBool("IsMoving", false);
+        }
+
+        
 
         if(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)){
 
             movePosition.y -=1; //The Player moves downwards
         }
+
+        
         
         if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
 
             movePosition.x -=1; //The Player moves left
         }
 
+        
+
         if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
 
             movePosition.x +=1; //The Player moves right
         }
 
+        
+
         Player1.transform.position += movePosition.normalized* Time.deltaTime;
 
         _rigidbody.linearVelocity = movePosition.normalized*_speed;
+        _animator.SetBool("IsMoving", movePosition != Vector3.zero); //Script for Movement. When the player releases a movement key, the movement animation will stop playing
 
     }
     
