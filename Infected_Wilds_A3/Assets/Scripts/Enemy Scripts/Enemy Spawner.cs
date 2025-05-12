@@ -12,7 +12,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab; 
     public float spawnInterval = 2f; // How often to spawn enemies
-    public int maxEnemies = 10;
+    public int amountOfEnemies;
     //public float spawnRange = 5f; // Area range around the spawner
     private int enemiesSpawned = 0;
     //Assign the enemy prefab in Inspector
@@ -27,11 +27,11 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        if (enemiesSpawned >= maxEnemies)
+        if (enemiesSpawned >= amountOfEnemies)
             return;
 
         
-        for (int i = 0; i < maxEnemies; i++)
+        for (int i = 0; i < amountOfEnemies; i++)
         {
             // Generate a random position within a circle
             Vector2 spawnPosition = (Vector2)transform.position + Random.insideUnitCircle * spawnRadius;

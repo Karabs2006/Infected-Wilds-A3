@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f200ad563cc6ca42b69f98d43de4e11
+guid: 7766c8d00b6882c4d84ccf3afea6ecdb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5605305458536319910
-    second: WhatsApp Image 2025-05-09 at 12.19.40_0
+      213: -1347532211411968617
+    second: Grass_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -74,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WhatsApp Image 2025-05-09 at 12.19.40_0
+      name: Grass_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 6
+        x: 12
+        y: 15
         width: 791
-        height: 885
-      alignment: 9
-      pivot: {x: 0.5566259, y: 0.5}
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5472663264f532b0800000000000000
-      internalID: -5605305458536319910
+      spriteID: 79d946fd79a9c4de0800000000000000
+      internalID: -1347532211411968617
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a1e5176b617e1234e8af5bb67cd9d63e
+    spriteID: 8af9e5db973938048ad871e2f19c16f7
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WhatsApp Image 2025-05-09 at 12.19.40_0: -5605305458536319910
+      Grass_0: -1347532211411968617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -166,11 +166,9 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("GameOverScreen");
         
             }
-            
-  
         }
 
-        if(collision.gameObject.name == "Wolf(Clone)" )//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
+        if(collision.gameObject.name == "Wolf(Clone)")//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
         {
             PlayerHealth = PlayerHealth - damage;
             
