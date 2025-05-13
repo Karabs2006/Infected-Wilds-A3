@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         myText.text = $"{PlayerHealth}";
-        healthBar.SetMaxHealth(MaxHealth);
+        //healthBar.SetMaxHealth(MaxHealth);
         
 
         
@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
     }
 
 
-    public void SetHealth(float healthChange){
+    /*public void SetHealth(float healthChange){
 
         PlayerHealth += healthChange;
         PlayerHealth = Mathf.Clamp(PlayerHealth, 0, MaxHealth);
@@ -116,6 +116,7 @@ public class Player : MonoBehaviour
         healthBar.SetMaxHealth(MaxHealth);
 
     }
+    */
 
     
 
@@ -170,7 +171,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.name == "Wolf" )//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
         {
             PlayerHealth = PlayerHealth - damage;
-            SetHealth(-damage);
+           // SetHealth(-damage);
             
             if(PlayerHealth > 0)
             {
@@ -191,7 +192,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.name == "Wolf(Clone)")//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
         {
             PlayerHealth = PlayerHealth - damage;
-            SetHealth(-damage);
+            //SetHealth(-damage);
             
             if(PlayerHealth > 0)
             {
