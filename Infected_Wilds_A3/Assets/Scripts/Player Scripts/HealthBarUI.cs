@@ -9,8 +9,6 @@ public class HealthBarUI : MonoBehaviour
     [SerializeField]
     private RectTransform healthBar;
 
-    
-
     private float maxHealth;
 
     public void ShrinkBar(float amount)
