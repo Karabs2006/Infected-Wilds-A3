@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
     public GameObject Player1;
     public float _speed;
     public TMP_Text myText;
-    public int PlayerHealth = 100;
+    public float PlayerHealth = 100;
     int damage = 10;
 
     public GameObject bulletPrefab;
@@ -46,6 +46,11 @@ public class Player : MonoBehaviour
     public float bulletSpeed = 20f;
 
     private Animator _animator;
+
+    public float MaxHealth;
+
+    [SerializeField]
+    private HealthBarUI healthBar;
 
 
     private void Awake()
@@ -59,6 +64,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         myText.text = $"{PlayerHealth}";
+        healthBar.SetMaxHealth(MaxHealth);
+        
 
         
     }
@@ -99,6 +106,18 @@ public class Player : MonoBehaviour
 
         
     }
+
+
+    public void SetHealth(float healthChange){
+
+        PlayerHealth += healthChange;
+        PlayerHealth = Mathf.Clamp(PlayerHealth, 0, MaxHealth);
+
+        healthBar.SetMaxHealth(MaxHealth);
+
+    }
+
+    
 
      void MovePlayer(){//This is the method used for player movement.
 
@@ -151,6 +170,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.name == "Wolf" )//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
         {
             PlayerHealth = PlayerHealth - damage;
+            SetHealth(-damage);
             
             if(PlayerHealth > 0)
             {
@@ -173,6 +193,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.name == "Wolf(Clone)" )//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
         {
             PlayerHealth = PlayerHealth - damage;
+            SetHealth(-damage);
             
             if(PlayerHealth > 0)
             {
