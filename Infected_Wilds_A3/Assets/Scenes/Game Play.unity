@@ -4715,6 +4715,7 @@ GameObject:
   - component: {fileID: 1814430094}
   - component: {fileID: 1814430098}
   - component: {fileID: 1814430099}
+  - component: {fileID: 1814430100}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -4742,7 +4743,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1159029117181118025, guid: 655b375d86aeef94d9e5927bac74d432, type: 3}
   bulletSpawnPoint: {fileID: 1197987391}
   bulletSpeed: 20
-  MaxHealth: 0
+  MaxHealth: 100
   healthBar: {fileID: 1294700711}
 --- !u!50 &1814430095
 Rigidbody2D:
@@ -4901,6 +4902,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1814430100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814430093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de19cc9c7c9e8b04ca779669de8df2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1159029117181118025, guid: 655b375d86aeef94d9e5927bac74d432, type: 3}
+  bulletSpawnPoint: {fileID: 1197987391}
+  bulletSpeed: 20
+  fireRate: 0.5
+  shootSound: {fileID: 8300000, guid: 338c3a32ad69cb848bdc5452edcb5993, type: 3}
+  shootVolume: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
