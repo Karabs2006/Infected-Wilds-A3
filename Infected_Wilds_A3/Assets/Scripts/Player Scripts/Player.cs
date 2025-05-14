@@ -41,9 +41,10 @@ public class Player : MonoBehaviour
     public float PlayerHealth = 100;
     int damage = 10;
 
+    /*
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
-    public float bulletSpeed = 20f;
+    public float bulletSpeed = 20f; */
 
     private Animator _animator;
 
