@@ -60,6 +60,20 @@ public class Player : MonoBehaviour
         
     }
     
+<<<<<<< Updated upstream
+=======
+
+
+    void Start()
+    {
+    
+        
+        
+
+        
+    }
+
+>>>>>>> Stashed changes
     void Update()
     {
         MovePlayer(); //This is code used in order to rotate the player according to the mouse position
