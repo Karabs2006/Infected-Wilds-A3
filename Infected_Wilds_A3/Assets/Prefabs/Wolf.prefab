@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 6901161783633003904}
   - component: {fileID: 2640913983352310853}
   - component: {fileID: 7695187743624860867}
-  - component: {fileID: 4040673920932822307}
+  - component: {fileID: 1377077583006649302}
+  - component: {fileID: 2569793620789209369}
   - component: {fileID: -2681675077361938307}
   - component: {fileID: 5644935807330882198}
   m_Layer: 6
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -3811622060508080644, guid: cb79a13ad77cd2246a0d6947b9a4f571, type: 3}
-  m_Color: {r: 0.6830188, g: 0.63426673, b: 0.6327589, a: 1}
+  m_Color: {r: 0.5018867, g: 0.49525803, b: 0.49525803, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyHealth: 50
   PlayerDamage: 25
---- !u!114 &4040673920932822307
+--- !u!114 &1377077583006649302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,12 +115,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1082042378793417843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f2e70b1d7e810d49860759596c683e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e9fd77bee34dc44e83e63c8f856d2a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.5
-  followRadius: 1
-  player: {fileID: 0}
+  _speed: 5
+  _rotationSpeed: 100
+--- !u!114 &2569793620789209369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082042378793417843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9598d301a6fd9cc438c7b44c11840b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerAwarenessDistance: 8
 --- !u!50 &-2681675077361938307
 Rigidbody2D:
   serializedVersion: 5
