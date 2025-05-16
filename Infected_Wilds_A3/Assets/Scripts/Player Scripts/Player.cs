@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D _rigidbody;
     public GameObject Player1;
     public float _speed;
-   
+
     public float PlayerHealth = 100;
     int damage = 10;
     public GameObject bulletPrefab;
@@ -53,27 +53,13 @@ public class Player : MonoBehaviour
     private Animator _animator;
 
     public HealthBarUI healthBarUI;
-    
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
-        
-    }
-    
-<<<<<<< Updated upstream
-=======
 
-
-    void Start()
-    {
-    
-        
-        
-
-        
     }
 
->>>>>>> Stashed changes
     void Update()
     {
         MovePlayer(); //This is code used in order to rotate the player according to the mouse position
@@ -101,10 +87,10 @@ public class Player : MonoBehaviour
         */
 
         if (Input.GetMouseButtonDown(0))
-        {   
+        {
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, transform.rotation);
             bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.up * bulletSpeed;
-             _animator.SetBool("IsAttack", false);
+            _animator.SetBool("IsAttack", false);
 
         }
     }
@@ -117,17 +103,18 @@ public class Player : MonoBehaviour
     }
 
 
-    void MovePlayer(){//This is the method used for player movement.
+    void MovePlayer()
+    {//This is the method used for player movement.
 
-        Vector3 movePosition =  Vector3.zero;
+        Vector3 movePosition = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-             movePosition.y += 1; //The Player moves upwards
+            movePosition.y += 1; //The Player moves upwards
             _animator.SetBool("IsMoving", true);
 
         }
-        
+
         else
         {
             _animator.SetBool("IsMoving", false);
@@ -136,7 +123,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            movePosition.y -=1; //The Player moves downwards
+            movePosition.y -= 1; //The Player moves downwards
         }
 
 
@@ -144,35 +131,35 @@ public class Player : MonoBehaviour
         {
             movePosition.x -= 1; //The Player moves left
         }
-        
 
-        if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-                movePosition.x +=1; //The Player moves right
+            movePosition.x += 1; //The Player moves right
         }
 
 
-        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-                movePosition.x -=1; //The Player moves left
+            movePosition.x -= 1; //The Player moves left
         }
 
-        if(Input.GetKey(KeyCode.E))
-        {       
-                StartCoroutine(AttackAnim());
-               //The Player moves left
+        if (Input.GetKey(KeyCode.E))
+        {
+            StartCoroutine(AttackAnim());
+            //The Player moves left
         }
 
-        
 
-        Player1.transform.position += movePosition.normalized* Time.deltaTime;
 
-        _rigidbody.linearVelocity = movePosition.normalized*_speed;
+        Player1.transform.position += movePosition.normalized * Time.deltaTime;
+
+        _rigidbody.linearVelocity = movePosition.normalized * _speed;
         _animator.SetBool("IsMoving", movePosition != Vector3.zero); //Script for Movement. When the player releases a movement key, the movement animation will stop playing
 
-        
+
     }
-    
+
     void OnCollisionEnter2D(Collision2D collision)//This is a basic script for enemy attacks
     {
         if (collision.gameObject.name == "Wolf")//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
@@ -186,73 +173,73 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene("GameOverScreen");
         }
-      
+
 
         if (collision.gameObject.name == "Wolf(Clone)")//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
+        {
+            PlayerHealth = PlayerHealth - damage;
+            healthBarUI.Damage(damage);
+
+            if (PlayerHealth > 0)
             {
-                PlayerHealth = PlayerHealth - damage;
-                healthBarUI.Damage(damage);
-           
-                if (PlayerHealth > 0)
-                    {
-                        
 
-                    }
-
-                else if (PlayerHealth <= 0)//When the Player's health reaches 0, they will be given the option to Restart or Quit
-                    {
-                        SceneManager.LoadScene("GameOverScreen");
-                    } 
 
             }
+
+            else if (PlayerHealth <= 0)//When the Player's health reaches 0, they will be given the option to Restart or Quit
+            {
+                SceneManager.LoadScene("GameOverScreen");
+            }
+
+        }
 
         if (collision.gameObject.name == "Bear")
-            {
-                PlayerHealth = PlayerHealth - 50;
-                healthBarUI.Damage(50);
-           
-                
-                
-                if (PlayerHealth > 0)
-                {
-                   
-                }
+        {
+            PlayerHealth = PlayerHealth - 50;
+            healthBarUI.Damage(50);
 
-                else if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
-                {
-                    SceneManager.LoadScene("GameOverScreen");
-                }
-            
-  
-            } 
+
+
+            if (PlayerHealth > 0)
+            {
+
+            }
+
+            else if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
+            {
+                SceneManager.LoadScene("GameOverScreen");
+            }
+
+
+        }
 
         if (collision.gameObject.name == "Bear(Clone)")
+        {
+            PlayerHealth = PlayerHealth - 50;
+            healthBarUI.Damage(50);
+
+
+
+            if (PlayerHealth > 0)
             {
-                PlayerHealth = PlayerHealth - 50;
-                healthBarUI.Damage(50);
-           
-               
-            
-                if (PlayerHealth > 0)
-                {
-                   
 
-                }
 
-                else if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
-                {
-                    SceneManager.LoadScene("GameOverScreen");
+            }
 
-                }
-            
+            else if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
+            {
+                SceneManager.LoadScene("GameOverScreen");
 
             }
 
 
-            
+        }
+
+
+
     }
 
-    
+
 
 
 

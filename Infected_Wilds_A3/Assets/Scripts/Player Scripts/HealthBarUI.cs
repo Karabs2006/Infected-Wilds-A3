@@ -8,21 +8,21 @@ public class HealthBarUI : MonoBehaviour
 
     public Slider slider;
 
-     void Start()
-{
-    if (slider == null)
+    void Start()
     {
-        GameObject sliderObj = GameObject.FindWithTag("Slider");
-        if (sliderObj != null)
+        if (slider == null)
         {
-            slider = sliderObj.GetComponent<Slider>();
-        }
-        else
-        {
-            Debug.LogWarning("HealthSlider not found in scene!");
+            GameObject sliderObj = GameObject.FindWithTag("Slider");
+            if (sliderObj != null)
+            {
+                slider = sliderObj.GetComponent<Slider>();
+            }
+            else
+            {
+                Debug.LogWarning("HealthSlider not found in scene!");
+            }
         }
     }
-}
 
 
     public void SetHealth(float health)
@@ -36,7 +36,7 @@ public class HealthBarUI : MonoBehaviour
         slider.value -= damage;
     }
 
-    
+
 }
 
 
