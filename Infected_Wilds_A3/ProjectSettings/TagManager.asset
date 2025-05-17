@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Bullet
   - Slider
+  - Score
   layers:
   - Default
   - TransparentFX

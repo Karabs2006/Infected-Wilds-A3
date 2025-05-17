@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 1927515676665460097}
   - component: {fileID: 1053664448822957341}
   - component: {fileID: 3863116472042895609}
-  - component: {fileID: 5082670650076387319}
   - component: {fileID: 2099507410917556233}
-  - component: {fileID: -442755079427161418}
+  - component: {fileID: 4506549439847740925}
+  - component: {fileID: 7504764033806869168}
+  - component: {fileID: -6248646208072239232}
+  - component: {fileID: 6500960232837424023}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Untagged
@@ -31,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.4, y: 0.9, z: 0.00596614}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,8 +82,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.4943396, g: 0.27619287, b: 0.051299337, a: 1}
+  m_Sprite: {fileID: 1228595241014988886, guid: da6939e1f16bfed419c9cf134c6640ff, type: 3}
+  m_Color: {r: 0.97735846, g: 0.97735846, b: 0.97735846, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -118,8 +120,47 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &5082670650076387319
-CircleCollider2D:
+--- !u!114 &2099507410917556233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691097821860648882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a2a0065c866274abce1bb18d0867e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHealth: 100
+  PlayerDamage: 25
+  hitDamage: 0
+  score: {fileID: 0}
+  enemyScore: 70
+--- !u!95 &4506549439847740925
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691097821860648882}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d771c46c3b3f1048ba46655d4d7a4af, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &7504764033806869168
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -152,9 +193,10 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!114 &2099507410917556233
+  m_Offset: {x: 0.04, y: 0}
+  m_Size: {x: 3.13, y: 4.93}
+  m_Direction: 0
+--- !u!114 &-6248646208072239232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,12 +205,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691097821860648882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a2a0065c866274abce1bb18d0867e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e9fd77bee34dc44e83e63c8f856d2a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: 100
-  PlayerDamage: 25
---- !u!114 &-442755079427161418
+  _speed: 4
+  _rotationSpeed: 110
+--- !u!114 &6500960232837424023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,9 +219,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691097821860648882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f2e70b1d7e810d49860759596c683e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 9598d301a6fd9cc438c7b44c11840b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  followRadius: 5
-  player: {fileID: 0}
+  _playerAwarenessDistance: 8
