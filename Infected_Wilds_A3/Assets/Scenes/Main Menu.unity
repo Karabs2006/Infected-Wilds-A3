@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 603576835}
   m_Layer: 0
-  m_Name: Sound
+  m_Name: Main Menu Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 1126222746}
   - component: {fileID: 1126222747}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Background Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

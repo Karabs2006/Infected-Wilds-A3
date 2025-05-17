@@ -37,7 +37,7 @@ public class PlayerShooting : MonoBehaviour
     {
         // Create bullet
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, transform.rotation);
-        bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.up * bulletSpeed;
+        bullet.GetComponent<Rigidbody2D>().linearVelocity = -transform.up * bulletSpeed;
 
         // Play shoot sound
         if (shootSound != null)
