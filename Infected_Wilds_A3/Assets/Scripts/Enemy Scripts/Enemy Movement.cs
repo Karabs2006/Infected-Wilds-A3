@@ -1,3 +1,19 @@
+/*
+Title: Creating Simple AI to Chase Player (Unity Tutorial | 2D Top Down Shooter)
+Author: Ketra Games
+Date: 12 December 2022
+Code version: N/A
+Availability: https://www.youtube.com/watch?v=XHrWtLZtzy8
+*/
+
+/*
+Title: Creating an Enemy AI (Unity Tutorial | 2D Top Down Shooter)
+Author: Ketra Games
+Date: 20 February 2023
+Code version: N/A
+Availability: https://www.youtube.com/watch?v=sIf_SQzj054&t=84s 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
