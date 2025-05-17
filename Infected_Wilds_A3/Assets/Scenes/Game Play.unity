@@ -6566,7 +6566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df98f8452f447174f9f1ca46aa6426d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1691097821860648882, guid: 59064d823bbf72649a1c65270a256979, type: 3}
+  enemyPrefab: {fileID: 1691097821860648882, guid: ad72069e6ae5587448325e637d6bdd21, type: 3}
   spawnInterval: 8
   amountOfEnemies: 1
   spawnRadius: 1
@@ -7706,7 +7706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df98f8452f447174f9f1ca46aa6426d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1691097821860648882, guid: 59064d823bbf72649a1c65270a256979, type: 3}
+  enemyPrefab: {fileID: 1691097821860648882, guid: ad72069e6ae5587448325e637d6bdd21, type: 3}
   spawnInterval: 8
   amountOfEnemies: 1
   spawnRadius: 1
@@ -13062,7 +13062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df98f8452f447174f9f1ca46aa6426d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1691097821860648882, guid: 59064d823bbf72649a1c65270a256979, type: 3}
+  enemyPrefab: {fileID: 1691097821860648882, guid: ad72069e6ae5587448325e637d6bdd21, type: 3}
   spawnInterval: 8
   amountOfEnemies: 1
   spawnRadius: 1
@@ -13184,7 +13184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df98f8452f447174f9f1ca46aa6426d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1691097821860648882, guid: 59064d823bbf72649a1c65270a256979, type: 3}
+  enemyPrefab: {fileID: 1691097821860648882, guid: ad72069e6ae5587448325e637d6bdd21, type: 3}
   spawnInterval: 8
   amountOfEnemies: 1
   spawnRadius: 1
