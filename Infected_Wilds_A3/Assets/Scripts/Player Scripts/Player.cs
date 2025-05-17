@@ -54,6 +54,8 @@ public class Player : MonoBehaviour
 
     public HealthBarUI healthBarUI;
 
+   
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();

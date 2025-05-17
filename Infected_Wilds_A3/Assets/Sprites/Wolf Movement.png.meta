@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 190cfbf505a35e44aa7ba6410ce9de58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1798487706800416946
+    second: Wolf Movement_0
+  - first:
+      213: -2049897935797147307
+    second: Wolf Movement_1
+  - first:
+      213: -1695734680624127911
+    second: Wolf Movement_2
+  - first:
+      213: 458577116247099089
+    second: Wolf Movement_3
+  - first:
+      213: -5042779688105941432
+    second: Wolf Movement_4
+  - first:
+      213: -6542226591197493020
+    second: Wolf Movement_5
+  - first:
+      213: 1481424803917281111
+    second: Wolf Movement_6
+  - first:
+      213: -1361365288521434499
+    second: Wolf Movement_7
+  - first:
+      213: -1759255731522747190
+    second: Wolf Movement_8
+  - first:
+      213: -6966763748594809649
+    second: Wolf Movement_9
+  - first:
+      213: 8272789119392708070
+    second: Wolf Movement_10
+  - first:
+      213: -642130488012345317
+    second: Wolf Movement_11
+  - first:
+      213: -3521760066206225279
+    second: Wolf Movement_12
+  - first:
+      213: 6922799559994535964
+    second: Wolf Movement_13
+  - first:
+      213: 8915696907703786218
+    second: Wolf Movement_14
+  - first:
+      213: -3352082349181334935
+    second: Wolf Movement_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf Movement_0
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 5776
+        width: 125
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47114f95fc7a07e0800000000000000
+      internalID: -1798487706800416946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_1
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 5776
+        width: 125
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559210f20bc4d83e0800000000000000
+      internalID: -2049897935797147307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_2
+      rect:
+        serializedVersion: 2
+        x: 4742
+        y: 5777
+        width: 125
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950a618da4a8778e0800000000000000
+      internalID: -1695734680624127911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_3
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 4697
+        width: 125
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6080425713d5600800000000000000
+      internalID: 458577116247099089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_4
+      rect:
+        serializedVersion: 2
+        x: 2823
+        y: 4700
+        width: 122
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846e3e96792740ab0800000000000000
+      internalID: -5042779688105941432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_5
+      rect:
+        serializedVersion: 2
+        x: 4743
+        y: 4700
+        width: 122
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e80f87d3975535a0800000000000000
+      internalID: -6542226591197493020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_6
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 3621
+        width: 118
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75731fe92041f8410800000000000000
+      internalID: 1481424803917281111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_7
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 3621
+        width: 118
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7af120ab757b1de0800000000000000
+      internalID: -1361365288521434499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_8
+      rect:
+        serializedVersion: 2
+        x: 4745
+        y: 3622
+        width: 119
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4448dab3ed597e0800000000000000
+      internalID: -1759255731522747190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_9
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 2542
+        width: 119
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc400fa3845115f90800000000000000
+      internalID: -6966763748594809649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_10
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 2534
+        width: 134
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e57e1b7fd9dec270800000000000000
+      internalID: 8272789119392708070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_11
+      rect:
+        serializedVersion: 2
+        x: 4738
+        y: 2534
+        width: 134
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10739a29b1b617f0800000000000000
+      internalID: -642130488012345317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_12
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1457
+        width: 118
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c2f9df0e1302fc0800000000000000
+      internalID: -3521760066206225279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_13
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 1457
+        width: 118
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1074b07589b21060800000000000000
+      internalID: 6922799559994535964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_14
+      rect:
+        serializedVersion: 2
+        x: 4742
+        y: 1456
+        width: 125
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea9bb4a91beabb70800000000000000
+      internalID: 8915696907703786218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf Movement_15
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 376
+        width: 125
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a803f0dd20b71d0800000000000000
+      internalID: -3352082349181334935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wolf Movement_0: -1798487706800416946
+      Wolf Movement_1: -2049897935797147307
+      Wolf Movement_10: 8272789119392708070
+      Wolf Movement_11: -642130488012345317
+      Wolf Movement_12: -3521760066206225279
+      Wolf Movement_13: 6922799559994535964
+      Wolf Movement_14: 8915696907703786218
+      Wolf Movement_15: -3352082349181334935
+      Wolf Movement_2: -1695734680624127911
+      Wolf Movement_3: 458577116247099089
+      Wolf Movement_4: -5042779688105941432
+      Wolf Movement_5: -6542226591197493020
+      Wolf Movement_6: 1481424803917281111
+      Wolf Movement_7: -1361365288521434499
+      Wolf Movement_8: -1759255731522747190
+      Wolf Movement_9: -6966763748594809649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

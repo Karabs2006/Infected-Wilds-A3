@@ -17,7 +17,26 @@ public class Enemy : MonoBehaviour
 
     public int PlayerDamage = 25;
     public int hitDamage;
-    public Animator anim;
+    public Score score;
+
+    public int enemyScore = 0;
+
+
+void Start()
+    {
+        if (score == null)
+        {
+            GameObject ScoreObj = GameObject.FindWithTag("Score");
+            if (ScoreObj!= null)
+            {
+                score = ScoreObj.GetComponent<Score>();
+            }
+            else
+            {
+                Debug.LogWarning("Score not found in scene!");
+            }
+        }
+    }
 
 
     
@@ -34,31 +53,7 @@ public class Enemy : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-
             
-            
-            if(trigger.gameObject.name == "Wolf" )
-            {
-                EnemyHealth -= hitDamage; 
-
-            } 
-            if (EnemyHealth <= 0)
-            {
-           
-            }
-
-            if(trigger.gameObject.name == "Wolf(Clone)" )
-            {
-                EnemyHealth -= hitDamage; 
-
-            } 
-            if (EnemyHealth <= 0)
-            {
-            
-            }
-
-            
-
 
 }
 
@@ -68,6 +63,7 @@ public void TakeDamage(int damage)
         if (EnemyHealth <= 0)
         {
             Die();
+            score.AddScore(enemyScore);
         }
     }
 
