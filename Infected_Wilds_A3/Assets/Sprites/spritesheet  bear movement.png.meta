@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spritesheet  bear movement_0: 1228595241014988886
+      spritesheet  bear movement_1: -8054305909256804413
+      spritesheet  bear movement_10: 2344848499878365290
+      spritesheet  bear movement_11: 916648219309321040
+      spritesheet  bear movement_12: 1663762143853143006
+      spritesheet  bear movement_13: 5250717604741703916
+      spritesheet  bear movement_2: 753884603973962943
+      spritesheet  bear movement_3: 2106343093069141016
+      spritesheet  bear movement_4: 740867911514201106
+      spritesheet  bear movement_5: 8427586010975644900
+      spritesheet  bear movement_6: 7717762428256945619
+      spritesheet  bear movement_7: -4237077735795064926
+      spritesheet  bear movement_8: 825479256626802303
+      spritesheet  bear movement_9: -4959561400210533371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

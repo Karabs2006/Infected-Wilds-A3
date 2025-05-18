@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Health Outline_0: -8734645589650931403
+      Health Outline_1: 119885023280246945
+      Health Outline_2: 5237131941140292233
+      Health Outline_3: 8966185031224525424
+      Health Outline_4: 4908915308144478122
+      Health Outline_5: -8210555548768529866
+      Health Outline_6: 6184670731248538029
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
