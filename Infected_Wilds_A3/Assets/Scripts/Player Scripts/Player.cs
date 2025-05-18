@@ -54,6 +54,8 @@ public class Player : MonoBehaviour
 
     public HealthBarUI healthBarUI;
 
+    public Collider2D Hitbox;
+
    
 
     private void Awake()
@@ -94,8 +96,10 @@ public class Player : MonoBehaviour
     IEnumerator AttackAnim()
     {
         _animator.SetBool("IsAttack", true);
-        yield return new WaitForSeconds(0.45f); // Wait for 2 seconds
+        Hitbox.enabled = true;
+        yield return new WaitForSeconds(0.5f); 
         _animator.SetBool("IsAttack", false);
+        Hitbox.enabled = false;
     }
 
 

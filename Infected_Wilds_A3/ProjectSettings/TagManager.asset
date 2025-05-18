@@ -9,6 +9,8 @@ TagManager:
   - Bullet
   - Slider
   - Score
+  - DeathPrt
+  - Melee
   layers:
   - Default
   - TransparentFX
