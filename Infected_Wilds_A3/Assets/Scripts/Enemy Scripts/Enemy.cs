@@ -21,13 +21,17 @@ public class Enemy : MonoBehaviour
 
     public int enemyScore = 0;
 
+    public DeathParticles deathParticles;
 
-void Start()
+
+
+
+    void Start()
     {
         if (score == null)
         {
             GameObject ScoreObj = GameObject.FindWithTag("Score");
-            if (ScoreObj!= null)
+            if (ScoreObj != null)
             {
                 score = ScoreObj.GetComponent<Score>();
             }
@@ -36,23 +40,42 @@ void Start()
                 Debug.LogWarning("Score not found in scene!");
             }
         }
+        
+        if (deathParticles == null)
+        {
+            GameObject DeathParticles = GameObject.FindWithTag("DeathPrt");
+            if (DeathParticles!= null)
+            {
+                deathParticles = DeathParticles.GetComponent<DeathParticles>();
+            }
+            else
+            {
+                Debug.LogWarning("DeathPrts not found in scene!");
+            }
+        }
     }
 
 
-    
+
     void OnTriggerEnter2D(Collider2D trigger)
-        {   // This code explains how much damage an enemy takes/ how many shots it takes to destroy an enemy
-            Bullet bulletScript = trigger.gameObject.GetComponent<Bullet>();
+    {   // This code explains how much damage an enemy takes/ how many shots it takes to destroy an enemy
+        Bullet bulletScript = trigger.gameObject.GetComponent<Bullet>();
 
-            if(trigger.gameObject.name == "Bullet")
-            {
-                EnemyHealth -= bulletScript.damage; 
+        if (trigger.gameObject.name == "Bullet")
+        {
+            EnemyHealth -= bulletScript.damage;
 
-            } 
-            if(EnemyHealth == 0)
-            {
-                Destroy(gameObject);
-            }
+        }
+        if (EnemyHealth == 0)
+        {
+            Destroy(gameObject);
+        }
+            
+            if (trigger.CompareTag("Melee")) // Make sure your enemy GameObjects are tagged "Enemy"
+        {
+
+            TakeDamage(20);
+        }
             
 
 }
@@ -68,8 +91,10 @@ public void TakeDamage(int damage)
     }
 
     void Die()
-    {
+    {   deathParticles.Death();
         Destroy(gameObject);
+        
+
     }
 
     

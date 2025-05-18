@@ -1,34 +1,37 @@
 fileFormatVersion: 2
-guid: 238d23f9ad20c4b49b0a53d3decfe949
+guid: 8c77978ec8502294b9a3836f4a3895d7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 585489585357299884
-    second: spritesheet (2)_0
+      213: -7236206229994680496
+    second: spritesheet (4) swing axe_0
   - first:
-      213: 3213048799308102398
-    second: spritesheet (2)_1
+      213: 6620721277485505228
+    second: spritesheet (4) swing axe_1
   - first:
-      213: 4619062684799962818
-    second: spritesheet (2)_2
+      213: -4602670349032572580
+    second: spritesheet (4) swing axe_2
   - first:
-      213: -7543266853627613897
-    second: spritesheet (2)_3
+      213: 436203255817742828
+    second: spritesheet (4) swing axe_3
   - first:
-      213: 7642487444960770648
-    second: spritesheet (2)_4
+      213: 3947688470038566332
+    second: spritesheet (4) swing axe_4
   - first:
-      213: -8314218504887557038
-    second: spritesheet (2)_5
+      213: 1672859393660650642
+    second: spritesheet (4) swing axe_5
   - first:
-      213: 4628161946674252807
-    second: spritesheet (2)_6
+      213: -8943870768655503770
+    second: spritesheet (4) swing axe_6
   - first:
-      213: 2558845048347152661
-    second: spritesheet (2)_7
+      213: -665201382714165674
+    second: spritesheet (4) swing axe_7
   - first:
-      213: 6679592398122706825
-    second: spritesheet (2)_8
+      213: 10971408889292087
+    second: spritesheet (4) swing axe_8
+  - first:
+      213: 2108082573896073870
+    second: spritesheet (4) swing axe_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -124,199 +127,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet (2)_0
+      name: spritesheet (4) swing axe_0
       rect:
         serializedVersion: 2
-        x: 735
-        y: 4773
-        width: 324
-        height: 295
+        x: 884
+        y: 4713
+        width: 177
+        height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca0a9e20da3102800800000000000000
-      internalID: 585489585357299884
+      spriteID: 05fc2bbd5c4d39b90800000000000000
+      internalID: -7236206229994680496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet (2)_1
+      name: spritesheet (4) swing axe_1
       rect:
         serializedVersion: 2
-        x: 2705
-        y: 4766
-        width: 280
-        height: 302
+        x: 2831
+        y: 4712
+        width: 265
+        height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efa31c80cda079c20800000000000000
-      internalID: 3213048799308102398
+      spriteID: ccad46d7ce681eb50800000000000000
+      internalID: 6620721277485505228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet (2)_2
+      name: spritesheet (4) swing axe_2
       rect:
         serializedVersion: 2
-        x: 745
-        y: 3692
-        width: 298
-        height: 281
+        x: 910
+        y: 3623
+        width: 279
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ce83caf9053a1040800000000000000
-      internalID: 4619062684799962818
+      spriteID: c59b0bb14b70020c0800000000000000
+      internalID: -4602670349032572580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet (2)_3
+      name: spritesheet (4) swing axe_3
       rect:
         serializedVersion: 2
-        x: 2709
-        y: 3673
-        width: 280
-        height: 300
+        x: 2771
+        y: 3628
+        width: 265
+        height: 259
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73d2c8733cee05790800000000000000
-      internalID: -7543266853627613897
+      spriteID: ce9a2e0dc84bd0600800000000000000
+      internalID: 436203255817742828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet (2)_4
+      name: spritesheet (4) swing axe_4
       rect:
         serializedVersion: 2
-        x: 730
-        y: 2607
-        width: 309
-        height: 285
+        x: 869
+        y: 2551
+        width: 187
+        height: 291
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 5, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85af44de6d19f0a60800000000000000
-      internalID: 7642487444960770648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet (2)_5
-      rect:
-        serializedVersion: 2
-        x: 2705
-        y: 2603
-        width: 289
-        height: 289
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 254a2370256fd9c80800000000000000
-      internalID: -8314218504887557038
+      spriteID: cb5dd8c6fb109c630800000000000000
+      internalID: 3947688470038566332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet (2)_6
+      name: spritesheet (4) swing axe_5
       rect:
         serializedVersion: 2
-        x: 735
-        y: 1532
-        width: 308
-        height: 294
+        x: 2789
+        y: 2551
+        width: 187
+        height: 291
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70ccf7af4c88a3040800000000000000
-      internalID: 4628161946674252807
+      spriteID: 294815e51c0373710800000000000000
+      internalID: 1672859393660650642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet (2)_7
+      name: spritesheet (4) swing axe_6
       rect:
         serializedVersion: 2
-        x: 2719
-        y: 1526
-        width: 266
-        height: 286
+        x: 851
+        y: 1468
+        width: 265
+        height: 259
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 511dffd9308d28320800000000000000
-      internalID: 2558845048347152661
+      spriteID: 66ee94d2cecf0e380800000000000000
+      internalID: -8943870768655503770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet (2)_8
+      name: spritesheet (4) swing axe_7
       rect:
         serializedVersion: 2
-        x: 726
-        y: 415
-        width: 331
-        height: 284
+        x: 2830
+        y: 1463
+        width: 279
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 987e08665eda2bc50800000000000000
-      internalID: 6679592398122706825
+      spriteID: 6563937eddab4c6f0800000000000000
+      internalID: -665201382714165674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_8
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 392
+        width: 265
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7352881307af62000800000000000000
+      internalID: 10971408889292087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_9
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 393
+        width: 177
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82444e8ee9614d10800000000000000
+      internalID: 2108082573896073870
       vertices: []
       indices: 
       edges: []
@@ -325,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 64b60fc411da0004ba2c651ae7a680c2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -335,15 +360,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      spritesheet (2)_0: 585489585357299884
-      spritesheet (2)_1: 3213048799308102398
-      spritesheet (2)_2: 4619062684799962818
-      spritesheet (2)_3: -7543266853627613897
-      spritesheet (2)_4: 7642487444960770648
-      spritesheet (2)_5: -8314218504887557038
-      spritesheet (2)_6: 4628161946674252807
-      spritesheet (2)_7: 2558845048347152661
-      spritesheet (2)_8: 6679592398122706825
+      spritesheet (4) swing axe_0: -7236206229994680496
+      spritesheet (4) swing axe_1: 6620721277485505228
+      spritesheet (4) swing axe_2: -4602670349032572580
+      spritesheet (4) swing axe_3: 436203255817742828
+      spritesheet (4) swing axe_4: 3947688470038566332
+      spritesheet (4) swing axe_5: 1672859393660650642
+      spritesheet (4) swing axe_6: -8943870768655503770
+      spritesheet (4) swing axe_7: -665201382714165674
+      spritesheet (4) swing axe_8: 10971408889292087
+      spritesheet (4) swing axe_9: 2108082573896073870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
