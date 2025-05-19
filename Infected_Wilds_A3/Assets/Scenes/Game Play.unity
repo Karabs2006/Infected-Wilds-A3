@@ -9154,9 +9154,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPrefab: {fileID: 8159186965240545283, guid: f3d46080560ffa546a5c699abae3504e, type: 3}
-  spawnInterval: 3
+  spawnInterval: 4
   maxHealthKits: 1
-  spawnRadius: 11
+  spawnRadius: 70
 --- !u!4 &489578906
 Transform:
   m_ObjectHideFlags: 0

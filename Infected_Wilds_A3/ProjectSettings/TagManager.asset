@@ -11,6 +11,7 @@ TagManager:
   - Score
   - DeathPrt
   - Melee
+  - WolfDeath
   layers:
   - Default
   - TransparentFX
