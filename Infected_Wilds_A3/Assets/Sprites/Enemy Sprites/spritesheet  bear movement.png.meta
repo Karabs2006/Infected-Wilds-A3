@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: da6939e1f16bfed419c9cf134c6640ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1228595241014988886
+    second: spritesheet  bear movement_0
+  - first:
+      213: -8054305909256804413
+    second: spritesheet  bear movement_1
+  - first:
+      213: 753884603973962943
+    second: spritesheet  bear movement_2
+  - first:
+      213: 2106343093069141016
+    second: spritesheet  bear movement_3
+  - first:
+      213: 740867911514201106
+    second: spritesheet  bear movement_4
+  - first:
+      213: 8427586010975644900
+    second: spritesheet  bear movement_5
+  - first:
+      213: 7717762428256945619
+    second: spritesheet  bear movement_6
+  - first:
+      213: -4237077735795064926
+    second: spritesheet  bear movement_7
+  - first:
+      213: 825479256626802303
+    second: spritesheet  bear movement_8
+  - first:
+      213: -4959561400210533371
+    second: spritesheet  bear movement_9
+  - first:
+      213: 2344848499878365290
+    second: spritesheet  bear movement_10
+  - first:
+      213: 916648219309321040
+    second: spritesheet  bear movement_11
+  - first:
+      213: 1663762143853143006
+    second: spritesheet  bear movement_12
+  - first:
+      213: 5250717604741703916
+    second: spritesheet  bear movement_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet  bear movement_0
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 3595
+        width: 306
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6501f61ccd8dc0110800000000000000
+      internalID: 1228595241014988886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_1
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 3711
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c72b66f27b593090800000000000000
+      internalID: -8054305909256804413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_2
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 3595
+        width: 301
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc01859d06567a00800000000000000
+      internalID: 753884603973962943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 2515
+        width: 306
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814db7d12eb3b3d10800000000000000
+      internalID: 2106343093069141016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_4
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 2495
+        width: 306
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c1a43b077184a00800000000000000
+      internalID: 740867911514201106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_5
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1363
+        width: 306
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec214263dcc4f470800000000000000
+      internalID: 8427586010975644900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_6
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 1363
+        width: 306
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d58c1db9000b1b60800000000000000
+      internalID: 7717762428256945619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_7
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 283
+        width: 301
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aff7309f30e235c0800000000000000
+      internalID: -4237077735795064926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_8
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 831
+        width: 37
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ea1b4a201b47b00800000000000000
+      internalID: 825479256626802303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_9
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 831
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50456b2fe291c2bb0800000000000000
+      internalID: -4959561400210533371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_10
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 283
+        width: 306
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a688b5f79439a8020800000000000000
+      internalID: 2344848499878365290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_11
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 831
+        width: 37
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b2de7e2b698bc00800000000000000
+      internalID: 916648219309321040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_12
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 831
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3eb17daded61710800000000000000
+      internalID: 1663762143853143006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet  bear movement_13
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 467
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8e48e87db4ed840800000000000000
+      internalID: 5250717604741703916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spritesheet  bear movement_0: 1228595241014988886
+      spritesheet  bear movement_1: -8054305909256804413
+      spritesheet  bear movement_10: 2344848499878365290
+      spritesheet  bear movement_11: 916648219309321040
+      spritesheet  bear movement_12: 1663762143853143006
+      spritesheet  bear movement_13: 5250717604741703916
+      spritesheet  bear movement_2: 753884603973962943
+      spritesheet  bear movement_3: 2106343093069141016
+      spritesheet  bear movement_4: 740867911514201106
+      spritesheet  bear movement_5: 8427586010975644900
+      spritesheet  bear movement_6: 7717762428256945619
+      spritesheet  bear movement_7: -4237077735795064926
+      spritesheet  bear movement_8: 825479256626802303
+      spritesheet  bear movement_9: -4959561400210533371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

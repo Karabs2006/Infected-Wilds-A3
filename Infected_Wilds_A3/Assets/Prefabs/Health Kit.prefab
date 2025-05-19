@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7493298508721796782}
   - component: {fileID: 8632055495198837065}
   - component: {fileID: 2336101859914687386}
+  - component: {fileID: -6080385468306241475}
   m_Layer: 0
   m_Name: Health Kit
   m_TagString: Untagged
@@ -147,3 +148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7cce18762a2faf46995a5ab7a7d7a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBarUI: {fileID: -6080385468306241475}
+--- !u!114 &-6080385468306241475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8159186965240545283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7137c8b55130ae64bb94327d3264f461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}

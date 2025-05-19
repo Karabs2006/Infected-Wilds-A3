@@ -7,6 +7,7 @@ public class HealthKit : MonoBehaviour
     float MedKit = 10;
     public HealthBarUI healthBarUI;
 
+    [System.Obsolete]
     void Start()
     {
         if (healthBarUI == null)

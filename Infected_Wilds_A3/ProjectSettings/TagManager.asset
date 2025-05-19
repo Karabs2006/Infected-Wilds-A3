@@ -7,6 +7,10 @@ TagManager:
   - Door
   - Enemy
   - Bullet
+  - Slider
+  - Score
+  - DeathPrt
+  - Melee
   layers:
   - Default
   - TransparentFX

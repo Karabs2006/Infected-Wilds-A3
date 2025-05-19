@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 8c77978ec8502294b9a3836f4a3895d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7236206229994680496
+    second: spritesheet (4) swing axe_0
+  - first:
+      213: 6620721277485505228
+    second: spritesheet (4) swing axe_1
+  - first:
+      213: -4602670349032572580
+    second: spritesheet (4) swing axe_2
+  - first:
+      213: 436203255817742828
+    second: spritesheet (4) swing axe_3
+  - first:
+      213: 3947688470038566332
+    second: spritesheet (4) swing axe_4
+  - first:
+      213: 1672859393660650642
+    second: spritesheet (4) swing axe_5
+  - first:
+      213: -8943870768655503770
+    second: spritesheet (4) swing axe_6
+  - first:
+      213: -665201382714165674
+    second: spritesheet (4) swing axe_7
+  - first:
+      213: 10971408889292087
+    second: spritesheet (4) swing axe_8
+  - first:
+      213: 2108082573896073870
+    second: spritesheet (4) swing axe_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_0
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 4713
+        width: 177
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fc2bbd5c4d39b90800000000000000
+      internalID: -7236206229994680496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_1
+      rect:
+        serializedVersion: 2
+        x: 2831
+        y: 4712
+        width: 265
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccad46d7ce681eb50800000000000000
+      internalID: 6620721277485505228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 3623
+        width: 279
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59b0bb14b70020c0800000000000000
+      internalID: -4602670349032572580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_3
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 3628
+        width: 265
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9a2e0dc84bd0600800000000000000
+      internalID: 436203255817742828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_4
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 2551
+        width: 187
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5dd8c6fb109c630800000000000000
+      internalID: 3947688470038566332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_5
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 2551
+        width: 187
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294815e51c0373710800000000000000
+      internalID: 1672859393660650642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_6
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1468
+        width: 265
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ee94d2cecf0e380800000000000000
+      internalID: -8943870768655503770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_7
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1463
+        width: 279
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6563937eddab4c6f0800000000000000
+      internalID: -665201382714165674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_8
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 392
+        width: 265
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7352881307af62000800000000000000
+      internalID: 10971408889292087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (4) swing axe_9
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 393
+        width: 177
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82444e8ee9614d10800000000000000
+      internalID: 2108082573896073870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spritesheet (4) swing axe_0: -7236206229994680496
+      spritesheet (4) swing axe_1: 6620721277485505228
+      spritesheet (4) swing axe_2: -4602670349032572580
+      spritesheet (4) swing axe_3: 436203255817742828
+      spritesheet (4) swing axe_4: 3947688470038566332
+      spritesheet (4) swing axe_5: 1672859393660650642
+      spritesheet (4) swing axe_6: -8943870768655503770
+      spritesheet (4) swing axe_7: -665201382714165674
+      spritesheet (4) swing axe_8: 10971408889292087
+      spritesheet (4) swing axe_9: 2108082573896073870
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -21,6 +21,7 @@ public class PlayerAwarenessController : MonoBehaviour
 
     private Transform _player;
 
+    [System.Obsolete]
     private void Awake()
     {
         _player = FindObjectOfType<Player>().transform;
