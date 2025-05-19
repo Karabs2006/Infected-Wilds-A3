@@ -10,7 +10,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class WolfScript : MonoBehaviour
+public class Enemy : MonoBehaviour
 {   
   
     public int EnemyHealth = 100;
@@ -67,11 +67,24 @@ public class WolfScript : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("Score not found in scene!");
+                Debug.LogWarning("Sound not found in scene!");
             }
         }
 
+
+        
+        
+
+
+
+
     }
+
+
+
+
+
+
 
     void OnTriggerEnter2D(Collider2D trigger)
     {   // This code explains how much damage an enemy takes/ how many shots it takes to destroy an enemy

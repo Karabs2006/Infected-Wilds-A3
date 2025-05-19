@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 1927515676665460097}
   - component: {fileID: 1053664448822957341}
   - component: {fileID: 3863116472042895609}
-  - component: {fileID: 2099507410917556233}
   - component: {fileID: 4506549439847740925}
   - component: {fileID: 7504764033806869168}
   - component: {fileID: -6248646208072239232}
   - component: {fileID: 6500960232837424023}
+  - component: {fileID: 8844660328407345293}
   m_Layer: 0
   m_Name: Bear
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1691097821860648882}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.4, y: 0.9, z: 0.00596614}
+  m_LocalPosition: {x: -5.4, y: 0.908, z: 0.00596614}
   m_LocalScale: {x: 0.65, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -120,24 +120,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2099507410917556233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691097821860648882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a2a0065c866274abce1bb18d0867e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyHealth: 100
-  PlayerDamage: 25
-  hitDamage: 0
-  score: {fileID: 0}
-  enemyScore: 70
-  deathParticles: {fileID: 0}
 --- !u!95 &4506549439847740925
 Animator:
   serializedVersion: 7
@@ -224,3 +206,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerAwarenessDistance: 8
+--- !u!114 &8844660328407345293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691097821860648882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29fceea41e26456439e3bd1143dae443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHealth: 100
+  PlayerDamage: 25
+  hitDamage: 0
+  score: {fileID: 0}
+  enemyScore: 70
+  deathParticles: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 76c2d88e61f38e444a4c2bffb35a8c9d, type: 3}
+  audioSource: {fileID: 0}

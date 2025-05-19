@@ -11,6 +11,10 @@ TagManager:
   - Score
   - DeathPrt
   - Melee
+  - WolfDeath
+  - Bear
+  - BearDeath
+  - Wolf
   layers:
   - Default
   - TransparentFX

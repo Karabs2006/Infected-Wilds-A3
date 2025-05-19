@@ -1,18 +1,9 @@
-/*
-Title: title of program/source code
-Author: author(s) names
-Date: date accessed
-Code version: code version
-Availability: where it's located (url)
-*/
-
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class WolfScript : MonoBehaviour
-{   
-  
+public class BearScript : MonoBehaviour
+{
     public int EnemyHealth = 100;
 
     public int PlayerDamage = 25;
@@ -25,8 +16,6 @@ public class WolfScript : MonoBehaviour
 
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioSource audioSource;
-
-
 
 
     void Start()
@@ -58,18 +47,19 @@ public class WolfScript : MonoBehaviour
         }
 
 
-        if (audioSource == null)
+        if (audioSource == null )
         {
-            GameObject Death = GameObject.FindWithTag("WolfDeath");
+            GameObject Death = GameObject.FindWithTag("BearDeath");
             if (Death != null)
             {
                 audioSource = Death.GetComponent<AudioSource>();
             }
             else
             {
-                Debug.LogWarning("Score not found in scene!");
+                Debug.LogWarning("Sound not found in scene!");
             }
         }
+
 
     }
 
@@ -80,9 +70,10 @@ public class WolfScript : MonoBehaviour
         if (trigger.gameObject.name == "Bullet")
         {
             EnemyHealth -= bulletScript.damage;
+            
 
         }
-        if (EnemyHealth == 0)
+        if (EnemyHealth <= 0)
         {
             Destroy(gameObject);
         }
@@ -118,4 +109,6 @@ public void TakeDamage(int damage)
     
 
 }
+
+
 

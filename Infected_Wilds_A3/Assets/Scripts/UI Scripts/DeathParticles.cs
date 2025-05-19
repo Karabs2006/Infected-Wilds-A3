@@ -17,7 +17,7 @@ public class DeathParticles : MonoBehaviour
     }
 
     public void Death()
-    {
+    {   Debug.Log("Death() was called");
         particleSystem.Play();
     }
     

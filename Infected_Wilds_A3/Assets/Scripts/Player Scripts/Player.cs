@@ -56,6 +56,9 @@ public class Player : MonoBehaviour
 
     public Collider2D Hitbox;
 
+
+    [SerializeField] private AudioSource audioSource;
+
    
 
     private void Awake()
@@ -114,40 +117,81 @@ public class Player : MonoBehaviour
 
         Vector3 movePosition = Vector3.zero;
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+
+
+        if (Input.GetKey(KeyCode.W) )
         {
             movePosition.y += 1; //The Player moves upwards
             _animator.SetBool("IsMoving", true);
+            audioSource.loop = true;
+
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+                print("Playing");
+            }
+
 
         }
 
         else
         {
             _animator.SetBool("IsMoving", false);
+            
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+
         }
 
 
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S) )
         {
             movePosition.y -= 1; //The Player moves downwards
+           
+        }
+
+        else
+        {
+            _animator.SetBool("IsMoving", false);
+            audioSource.Stop();
         }
 
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) )
         {
-            movePosition.x -= 1; //The Player moves left
+            movePosition.x -= 1;
+          //The Player moves left
+        }
+        else
+        {
+            _animator.SetBool("IsMoving", false);
+          
         }
 
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D) )
         {
-            movePosition.x += 1; //The Player moves right
+            movePosition.x += 1;
+            audioSource.loop = true; //The Player moves right
+        }
+        else
+        {
+            _animator.SetBool("IsMoving", false);
+            
         }
 
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
-            movePosition.x -= 1; //The Player moves left
+            movePosition.x -= 1;
+             //The Player moves left
+        }
+        else
+        {
+            _animator.SetBool("IsMoving", false);
+            
         }
 
         if (Input.GetKey(KeyCode.E))
