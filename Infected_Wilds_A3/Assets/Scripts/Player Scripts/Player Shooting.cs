@@ -1,3 +1,12 @@
+/* 
+        This code is used for the shooting mechanic in the game. The bullet fires when the Left Mouse button is clicked 
+        and shoots from where the player is facing.
+
+        Reference: https://www.youtube.com/watch?v=Ryd_b8QDQ8A&t=233s
+
+        */
+
+
 using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
