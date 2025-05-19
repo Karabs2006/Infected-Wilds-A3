@@ -23,6 +23,10 @@ public class Enemy : MonoBehaviour
 
     public DeathParticles deathParticles;
 
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioSource audioSource;
+
+
 
 
 
@@ -87,6 +91,8 @@ public void TakeDamage(int damage)
         {
             Die();
             score.AddScore(enemyScore);
+            audioSource.PlayOneShot(deathSound);
+
         }
     }
 

@@ -112,6 +112,8 @@ MonoBehaviour:
   score: {fileID: 0}
   enemyScore: 40
   deathParticles: {fileID: 913731329154382180}
+  deathSound: {fileID: 8300000, guid: 204dbedefb0d10446870820be44e4e3f, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1377077583006649302
 MonoBehaviour:
   m_ObjectHideFlags: 0
