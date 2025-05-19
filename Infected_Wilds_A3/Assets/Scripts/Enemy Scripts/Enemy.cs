@@ -44,17 +44,31 @@ public class Enemy : MonoBehaviour
                 Debug.LogWarning("Score not found in scene!");
             }
         }
-        
+
         if (deathParticles == null)
         {
             GameObject DeathParticles = GameObject.FindWithTag("DeathPrt");
-            if (DeathParticles!= null)
+            if (DeathParticles != null)
             {
                 deathParticles = DeathParticles.GetComponent<DeathParticles>();
             }
             else
             {
                 Debug.LogWarning("DeathPrts not found in scene!");
+            }
+        }
+        
+
+        if (audioSource == null)
+        {
+            GameObject Death = GameObject.FindWithTag("WolfDeath");
+            if (Death != null)
+            {
+                audioSource = Death.GetComponent<AudioSource>();
+            }
+            else
+            {
+                Debug.LogWarning("Sound not found in scene!");
             }
         }
     }
