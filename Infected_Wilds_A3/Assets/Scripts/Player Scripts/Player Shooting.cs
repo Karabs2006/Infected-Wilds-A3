@@ -5,7 +5,7 @@ public class PlayerShooting : MonoBehaviour
     [Header("Shooting Settings")]
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletSpawnPoint;
-    [SerializeField] private float bulletSpeed = 20f;
+    [SerializeField] private float bulletSpeed;
     [SerializeField] private float fireRate = 0.5f;
 
     [Header("Audio Settings")]
@@ -40,7 +40,7 @@ public class PlayerShooting : MonoBehaviour
     {
         // Create bullet
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, transform.rotation);
-        bullet.GetComponent<Rigidbody2D>().linearVelocity = -transform.up * bulletSpeed;
+        bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.up * bulletSpeed;
 
         // Play shoot sound
         if (shootSound != null)
