@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 1228595241014988886, guid: da6939e1f16bfed419c9cf134c6640ff, type: 3}
   m_Color: {r: 0.97735846, g: 0.97735846, b: 0.97735846, a: 1}
   m_FlipX: 0
@@ -137,6 +137,7 @@ MonoBehaviour:
   hitDamage: 0
   score: {fileID: 0}
   enemyScore: 70
+  deathParticles: {fileID: 0}
 --- !u!95 &4506549439847740925
 Animator:
   serializedVersion: 7

@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     int damage = 10;
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
-    public float bulletSpeed;
+    public float bulletSpeed = 20f;
     private Animator _animator;
 
     public HealthBarUI healthBarUI;
@@ -90,7 +90,13 @@ public class Player : MonoBehaviour
 
         */
 
-       
+        /*if (Input.GetMouseButtonDown(0))
+        {
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, transform.rotation);
+            bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.up * bulletSpeed;
+            _animator.SetBool("IsAttack", false);
+
+        }*/
     }
 
     IEnumerator AttackAnim()
