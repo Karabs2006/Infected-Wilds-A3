@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class HealthKit : MonoBehaviour
 {
-    float MedKit = 10;
+    float MedKit = 20;
     public HealthBarUI healthBarUI;
 
     [System.Obsolete]
