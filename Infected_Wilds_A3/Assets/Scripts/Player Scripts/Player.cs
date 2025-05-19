@@ -90,13 +90,13 @@ public class Player : MonoBehaviour
 
         */
 
-        if (Input.GetMouseButtonDown(0))
+        /*if (Input.GetMouseButtonDown(0))
         {
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, transform.rotation);
             bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.up * bulletSpeed;
             _animator.SetBool("IsAttack", false);
 
-        }
+        }*/
     }
 
     IEnumerator AttackAnim()

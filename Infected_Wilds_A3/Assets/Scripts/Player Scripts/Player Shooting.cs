@@ -11,6 +11,8 @@ public class PlayerShooting : MonoBehaviour
     [Header("Audio Settings")]
     [SerializeField] private AudioClip shootSound;
     [SerializeField] private float shootVolume = 0.5f;
+    
+
 
     private float nextFireTime;
     private AudioSource audioSource;
@@ -24,6 +26,7 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
+    
     private void Update()
     {
         if (Input.GetMouseButton(0) && Time.time >= nextFireTime)

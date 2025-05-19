@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     public float lifetime = 2f; // Auto-destroy after time
 
     private Rigidbody2D rb;
+    
 
     void Start()
     {

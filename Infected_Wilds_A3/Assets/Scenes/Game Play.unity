@@ -6930,7 +6930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588170732}
   - component: {fileID: 588170733}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Hit Box
   m_TagString: Melee
   m_Icon: {fileID: 0}
