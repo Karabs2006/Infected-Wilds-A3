@@ -19,6 +19,7 @@ public class DeathParticles : MonoBehaviour
     public void Death()
     {
         particleSystem.Play();
+        Debug.Log("I DIED");
     }
     
 
