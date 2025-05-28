@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
@@ -11,11 +12,11 @@ public class PlayerShooting : MonoBehaviour
     [Header("Audio Settings")]
     [SerializeField] private AudioClip shootSound;
     [SerializeField] private float shootVolume = 0.5f;
-    
-
-
     private float nextFireTime;
     private AudioSource audioSource;
+
+    public TMP_Text count;
+    public int bulletCount = 64;
 
     private void Awake()
     {
@@ -26,13 +27,21 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
-    
+    private void Start()
+    {
+        count.text = $"{bulletCount}";
+    }
+
+
     private void Update()
     {
-        if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
+        if (Input.GetMouseButton(0) && Time.time >= nextFireTime && bulletCount>0)
         {
             Shoot();
+            bulletCount--;
+            count.text = $"{bulletCount}";
             nextFireTime = Time.time + fireRate;
+
         }
     }
 

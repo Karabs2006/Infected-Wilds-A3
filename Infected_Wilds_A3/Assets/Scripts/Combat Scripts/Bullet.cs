@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class Bullet : MonoBehaviour
 {   
@@ -11,6 +12,9 @@ public class Bullet : MonoBehaviour
     public float lifetime = 2f; // Auto-destroy after time
 
     private Rigidbody2D rb;
+
+    public TMP_Text count;
+    public int bullets;
     
 
     void Start()
@@ -34,5 +38,7 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+    
     }
 }
