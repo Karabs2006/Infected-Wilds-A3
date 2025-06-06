@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private GameObject deathParticlePrefab;
 
 
 
@@ -111,9 +112,19 @@ public void TakeDamage(int damage)
     }
 
     void Die()
-    {   deathParticles.Death();
-        Destroy(gameObject);
-        
+    {
+        // Instantiate particles at this enemy's position
+    GameObject deathEffect = Instantiate(deathParticlePrefab, transform.position, Quaternion.identity);
+    
+    // Optional: destroy particles after they're done
+    ParticleSystem ps = deathEffect.GetComponent<ParticleSystem>();
+    if (ps != null)
+    {
+        Destroy(deathEffect, ps.main.duration + ps.main.startLifetime.constantMax);
+    }
+
+    // Destroy enemy
+    Destroy(gameObject);
 
     }
 
