@@ -382,7 +382,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -22168,6 +22168,7 @@ MonoBehaviour:
   bulletSpeed: 20
   healthBarUI: {fileID: 1294700711}
   Hitbox: {fileID: 588170733}
+  player: {fileID: 1814430096}
 --- !u!50 &1814430095
 Rigidbody2D:
   serializedVersion: 5
