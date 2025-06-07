@@ -19,7 +19,9 @@ public class Enemy : MonoBehaviour
     public int enemyScore = 0;
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioSource audioSource;
-    public new ParticleSystem particleSystem;
+    //public new ParticleSystem particleSystem;
+    [SerializeField] private GameObject deathEffectPrefab;
+
 
 
     void Start()
@@ -80,6 +82,7 @@ public class Enemy : MonoBehaviour
         EnemyHealth -= damage;
         if (EnemyHealth <= 0)
         {
+            
             Die();
             score.AddScore(enemyScore);
             audioSource.PlayOneShot(deathSound);
@@ -88,7 +91,7 @@ public class Enemy : MonoBehaviour
     }
 
     void Die()
-    {
+    {       Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
     }
 }
