@@ -138,10 +138,10 @@ MonoBehaviour:
   hitDamage: 0
   score: {fileID: 0}
   enemyScore: 70
-  deathParticles: {fileID: 0}
   deathSound: {fileID: 8300000, guid: e5156899ae91a634e8a5dffac361ffdc, type: 3}
   audioSource: {fileID: 0}
   particleSystem: {fileID: 7315044852082785094}
+  deathEffectPrefab: {fileID: 5735850913243031501, guid: eb5ede6b8a15b914cafd3a9b1b1da257, type: 3}
 --- !u!95 &4506549439847740925
 Animator:
   serializedVersion: 7

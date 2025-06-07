@@ -12,17 +12,11 @@ using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
 {
-
     public int EnemyHealth = 100;
-
     public int PlayerDamage = 25;
     public int hitDamage;
     public Score score;
-
     public int enemyScore = 0;
-
-    public DeathParticles deathParticles;
-
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioSource audioSource;
     public new ParticleSystem particleSystem;
@@ -42,21 +36,6 @@ public class Enemy : MonoBehaviour
                 Debug.LogWarning("Score not found in scene!");
             }
         }
-
-        /*
-        if (deathParticles == null)
-        {
-            GameObject DeathParticles = GameObject.FindWithTag("DeathPrt");
-            if (DeathParticles != null)
-            {
-                deathParticles = DeathParticles.GetComponent<DeathParticles>();
-            }
-            else
-            {
-                Debug.LogWarning("DeathPrts not found in scene!");
-            }
-        }
-        */
 
 
         if (audioSource == null)
@@ -82,7 +61,6 @@ public class Enemy : MonoBehaviour
         if (trigger.gameObject.name == "Bullet")
         {
             EnemyHealth -= bulletScript.damage;
-
         }
         if (EnemyHealth == 0)
         {
@@ -91,7 +69,6 @@ public class Enemy : MonoBehaviour
 
         if (trigger.CompareTag("Melee")) // Make sure your enemy GameObjects are tagged "Enemy"
         {
-
             TakeDamage(20);
         }
 
@@ -112,21 +89,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        /*// Instantiate particles at this enemy's position
-    GameObject deathEffect = Instantiate(deathParticlePrefab, transform.position, Quaternion.identity);
-    
-
-    // Destroy enemy
-   
-
-    }
-    */
-        Destroy(gameObject);
-        particleSystem.Play();
-
-
-
-
+            Destroy(gameObject);
     }
 }
 
