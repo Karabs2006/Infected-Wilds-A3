@@ -11,8 +11,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
-{   
-  
+{
+
     public int EnemyHealth = 100;
 
     public int PlayerDamage = 25;
@@ -25,10 +25,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private GameObject deathParticlePrefab;
-
-
-
+    public new ParticleSystem particleSystem;
 
 
     void Start()
@@ -46,6 +43,7 @@ public class Enemy : MonoBehaviour
             }
         }
 
+        /*
         if (deathParticles == null)
         {
             GameObject DeathParticles = GameObject.FindWithTag("DeathPrt");
@@ -58,7 +56,8 @@ public class Enemy : MonoBehaviour
                 Debug.LogWarning("DeathPrts not found in scene!");
             }
         }
-        
+        */
+
 
         if (audioSource == null)
         {
@@ -89,19 +88,19 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-            
-            if (trigger.CompareTag("Melee")) // Make sure your enemy GameObjects are tagged "Enemy"
+
+        if (trigger.CompareTag("Melee")) // Make sure your enemy GameObjects are tagged "Enemy"
         {
 
             TakeDamage(20);
         }
-            
 
-}
 
-public void TakeDamage(int damage)
+    }
+
+    public void TakeDamage(int damage)
     {
-        EnemyHealth-= damage;
+        EnemyHealth -= damage;
         if (EnemyHealth <= 0)
         {
             Die();
@@ -113,22 +112,21 @@ public void TakeDamage(int damage)
 
     void Die()
     {
-        // Instantiate particles at this enemy's position
+        /*// Instantiate particles at this enemy's position
     GameObject deathEffect = Instantiate(deathParticlePrefab, transform.position, Quaternion.identity);
     
-    // Optional: destroy particles after they're done
-    ParticleSystem ps = deathEffect.GetComponent<ParticleSystem>();
-    if (ps != null)
-    {
-        Destroy(deathEffect, ps.main.duration + ps.main.startLifetime.constantMax);
-    }
 
     // Destroy enemy
-    Destroy(gameObject);
+   
 
     }
+    */
+        Destroy(gameObject);
+        particleSystem.Play();
 
-    
 
+
+
+    }
 }
 
