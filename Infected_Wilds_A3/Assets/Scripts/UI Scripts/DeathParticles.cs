@@ -3,7 +3,7 @@ using UnityEngine;
 public class DeathParticles : MonoBehaviour
 {
 
-    public new ParticleSystem particleSystem;
+    public ParticleSystem particleSystem;
 
         void Start()
     {
@@ -19,6 +19,7 @@ public class DeathParticles : MonoBehaviour
     public void Death()
     {
         particleSystem.Play();
+        Debug.Log("I DIED");
     }
     
 

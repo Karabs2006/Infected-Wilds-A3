@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
     public HealthBarUI healthBarUI;
 
     public Collider2D Hitbox;
+    public SpriteRenderer player;
 
    
 
@@ -150,6 +151,8 @@ public class Player : MonoBehaviour
             //The Player moves left
         }
 
+        
+
 
 
         Player1.transform.position += movePosition.normalized * Time.deltaTime;
@@ -160,12 +163,24 @@ public class Player : MonoBehaviour
 
     }
 
+    private IEnumerator FlashRoutine()
+    {
+        Color originalColor = player.color;
+
+        player.color = Color.red;
+
+        yield return new WaitForSeconds(0.3f);
+
+        player.color = originalColor;
+    }
+
     void OnCollisionEnter2D(Collision2D collision)//This is a basic script for enemy attacks
     {
         if (collision.gameObject.name == "Wolf")//If the Player has collided with an Enemy (or vice versa), the Player's health will decrease.
         {
             PlayerHealth = PlayerHealth - damage;
             healthBarUI.Damage(damage);
+            StartCoroutine(FlashRoutine());
 
         }
 
@@ -179,7 +194,8 @@ public class Player : MonoBehaviour
         {
             PlayerHealth = PlayerHealth - damage;
             healthBarUI.Damage(damage);
-
+            StartCoroutine(FlashRoutine());
+            
             if (PlayerHealth > 0)
             {
 
@@ -197,6 +213,7 @@ public class Player : MonoBehaviour
         {
             PlayerHealth = PlayerHealth - 50;
             healthBarUI.Damage(50);
+            StartCoroutine(FlashRoutine());
 
 
 
@@ -217,6 +234,7 @@ public class Player : MonoBehaviour
         {
             PlayerHealth = PlayerHealth - 50;
             healthBarUI.Damage(50);
+            StartCoroutine(FlashRoutine());
 
 
 

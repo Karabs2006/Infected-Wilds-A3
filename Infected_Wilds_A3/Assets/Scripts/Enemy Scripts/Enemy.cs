@@ -11,52 +11,21 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
-{   
-  
+{
     public int EnemyHealth = 100;
-
     public int PlayerDamage = 25;
     public int hitDamage;
-    public Score score;
-
+  
     public int enemyScore = 0;
-
-    public DeathParticles deathParticles;
-
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioSource audioSource;
-
-
+    //public new ParticleSystem particleSystem;
+    [SerializeField] private GameObject deathEffectPrefab;
 
 
 
     void Start()
     {
-        if (score == null)
-        {
-            GameObject ScoreObj = GameObject.FindWithTag("Score");
-            if (ScoreObj != null)
-            {
-                score = ScoreObj.GetComponent<Score>();
-            }
-            else
-            {
-                Debug.LogWarning("Score not found in scene!");
-            }
-        }
-
-        if (deathParticles == null)
-        {
-            GameObject DeathParticles = GameObject.FindWithTag("DeathPrt");
-            if (DeathParticles != null)
-            {
-                deathParticles = DeathParticles.GetComponent<DeathParticles>();
-            }
-            else
-            {
-                Debug.LogWarning("DeathPrts not found in scene!");
-            }
-        }
         
 
         if (audioSource == null)
@@ -82,42 +51,36 @@ public class Enemy : MonoBehaviour
         if (trigger.gameObject.name == "Bullet")
         {
             EnemyHealth -= bulletScript.damage;
-
         }
         if (EnemyHealth == 0)
         {
             Destroy(gameObject);
         }
-            
-            if (trigger.CompareTag("Melee")) // Make sure your enemy GameObjects are tagged "Enemy"
-        {
 
+        if (trigger.CompareTag("Melee")) // Make sure your enemy GameObjects are tagged "Enemy"
+        {
             TakeDamage(20);
         }
-            
 
-}
 
-public void TakeDamage(int damage)
+    }
+
+    public void TakeDamage(int damage)
     {
-        EnemyHealth-= damage;
+        EnemyHealth -= damage;
         if (EnemyHealth <= 0)
         {
+            
             Die();
-            score.AddScore(enemyScore);
+            
             audioSource.PlayOneShot(deathSound);
 
         }
     }
 
     void Die()
-    {   deathParticles.Death();
-        Destroy(gameObject);
-        
-
+    {       Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
     }
-
-    
-
 }
 
