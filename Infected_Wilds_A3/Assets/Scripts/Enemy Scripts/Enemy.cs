@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     public int EnemyHealth = 100;
     public int PlayerDamage = 25;
     public int hitDamage;
-    public Score score;
+  
     public int enemyScore = 0;
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioSource audioSource;
@@ -26,19 +26,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        if (score == null)
-        {
-            GameObject ScoreObj = GameObject.FindWithTag("Score");
-            if (ScoreObj != null)
-            {
-                score = ScoreObj.GetComponent<Score>();
-            }
-            else
-            {
-                Debug.LogWarning("Score not found in scene!");
-            }
-        }
-
+        
 
         if (audioSource == null)
         {
@@ -84,7 +72,7 @@ public class Enemy : MonoBehaviour
         {
             
             Die();
-            score.AddScore(enemyScore);
+            
             audioSource.PlayOneShot(deathSound);
 
         }

@@ -157,6 +157,8 @@ public class Player : MonoBehaviour
             //The Player moves left
         }
 
+        
+
 
 
         Player1.transform.position += movePosition.normalized * Time.deltaTime;
