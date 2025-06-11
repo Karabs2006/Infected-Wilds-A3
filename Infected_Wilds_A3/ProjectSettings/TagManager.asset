@@ -12,6 +12,7 @@ TagManager:
   - DeathPrt
   - Melee
   - WolfDeath
+  - Key
   layers:
   - Default
   - TransparentFX
