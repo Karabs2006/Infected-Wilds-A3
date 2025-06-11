@@ -57,6 +57,9 @@ public class Player : MonoBehaviour
     public Collider2D Hitbox;
     public SpriteRenderer player;
 
+    [SerializeField] private AudioClip hurtSound;
+    [SerializeField] private AudioSource audioSource;
+
    
 
     private void Awake()
@@ -186,6 +189,7 @@ public class Player : MonoBehaviour
         {
             PlayerHealth = PlayerHealth - damage;
             healthBarUI.Damage(damage);
+            audioSource.PlayOneShot(hurtSound);
             StartCoroutine(FlashRoutine());
 
         }
@@ -200,15 +204,11 @@ public class Player : MonoBehaviour
         {
             PlayerHealth = PlayerHealth - damage;
             healthBarUI.Damage(damage);
+            audioSource.PlayOneShot(hurtSound);
             StartCoroutine(FlashRoutine());
-            
-            if (PlayerHealth > 0)
-            {
-
-
-            }
-
-            else if (PlayerHealth <= 0)//When the Player's health reaches 0, they will be given the option to Restart or Quit
+        
+        
+         if (PlayerHealth <= 0)//When the Player's health reaches 0, they will be given the option to Restart or Quit
             {
                 SceneManager.LoadScene("GameOverScreen");
             }
@@ -219,16 +219,11 @@ public class Player : MonoBehaviour
         {
             PlayerHealth = PlayerHealth - 50;
             healthBarUI.Damage(50);
+            audioSource.PlayOneShot(hurtSound);
             StartCoroutine(FlashRoutine());
 
 
-
-            if (PlayerHealth > 0)
-            {
-
-            }
-
-            else if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
+             if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
             {
                 SceneManager.LoadScene("GameOverScreen");
             }
@@ -240,17 +235,29 @@ public class Player : MonoBehaviour
         {
             PlayerHealth = PlayerHealth - 50;
             healthBarUI.Damage(50);
+            audioSource.PlayOneShot(hurtSound);
             StartCoroutine(FlashRoutine());
 
 
 
-            if (PlayerHealth > 0)
+            if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
             {
-
+                SceneManager.LoadScene("GameOverScreen");
 
             }
 
-            else if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
+
+        }
+        
+        if (collision.gameObject.name == "Alpha Wolf")
+        {
+            PlayerHealth = PlayerHealth - 65;
+            healthBarUI.Damage(65);
+            audioSource.PlayOneShot(hurtSound);
+            StartCoroutine(FlashRoutine());
+
+
+            if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
             {
                 SceneManager.LoadScene("GameOverScreen");
 
