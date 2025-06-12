@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 48c9eebce8ca5e044a5e4c1af89951d4
+guid: 61c7fef54eada6e4db143d7566a582b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8964709887711389588
-    second: Ammo Box_0
-  - first:
-      213: -4910690397756719194
-    second: Ammo Box_1
+      213: -2239334574567149887
+    second: Border Tile_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,11 +47,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 32
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ammo Box_0
+      name: Border Tile_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 91
-        width: 12
-        height: 10
+        x: 493
+        y: 6
+        width: 1784
+        height: 1994
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4972873552c096c70800000000000000
-      internalID: 8964709887711389588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ammo Box_1
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 50
-        width: 113
-        height: 147
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6aff9c7e919b9dbb0800000000000000
-      internalID: -4910690397756719194
+      spriteID: 1ceaca5a1194ce0e0800000000000000
+      internalID: -2239334574567149887
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ca506fe63780d9d419805f26fabff97a
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ammo Box_0: 8964709887711389588
-      Ammo Box_1: -4910690397756719194
+      Border Tile_0: -2239334574567149887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

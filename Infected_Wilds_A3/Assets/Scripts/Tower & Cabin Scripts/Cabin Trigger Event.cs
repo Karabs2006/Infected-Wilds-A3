@@ -1,21 +1,13 @@
 using UnityEngine;
-using UnityEngine.Events;
 
-public class Trigger2DEvents : MonoBehaviour
+public class ToggleVisibility : MonoBehaviour
 {
-    [Header("2D Trigger Events")]
-    public UnityEvent onTriggerEnter2D;
-    public UnityEvent onTriggerExit2D;
+    public GameObject roof;
+    public GameObject floor;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void SetInside(bool isInside)
     {
-        if (other.CompareTag("Player"))
-            onTriggerEnter2D.Invoke();
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-            onTriggerExit2D.Invoke();
+        roof.SetActive(!isInside); // Hide roof when inside
+        floor.SetActive(isInside); // Show floor when inside
     }
 }
