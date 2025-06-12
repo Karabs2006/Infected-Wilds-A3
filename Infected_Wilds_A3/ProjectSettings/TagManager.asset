@@ -12,6 +12,7 @@ TagManager:
   - DeathPrt
   - Melee
   - WolfDeath
+  - AmmoText
   layers:
   - Default
   - TransparentFX
