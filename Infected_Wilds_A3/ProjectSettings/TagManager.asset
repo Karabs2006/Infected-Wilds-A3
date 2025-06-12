@@ -12,7 +12,6 @@ TagManager:
   - DeathPrt
   - Melee
   - WolfDeath
-  - Key
   layers:
   - Default
   - TransparentFX
@@ -24,7 +23,7 @@ TagManager:
   - Tree
   - Bullet
   - Hit Box
-  - Alpha Wolf
+  - Glow
   - 
   - 
   - 
