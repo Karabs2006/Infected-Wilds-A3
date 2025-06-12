@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Alpha wolf_0: -1240537409444591444
+      Alpha wolf_1: 838474874037655638
+      Alpha wolf_2: 1383177430085530504
+      Alpha wolf_3: 1051674620341002172
+      Alpha wolf_4: -1037111235948036637
+      Alpha wolf_5: 4243017893191101273
+      Alpha wolf_6: 1105105056068475297
+      Alpha wolf_7: 2647165185405013485
+      Alpha wolf_8: 651075799822279359
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
