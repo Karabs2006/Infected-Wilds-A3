@@ -1,20 +1,18 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ToggleRoofVisibility : MonoBehaviour
 {
     [SerializeField] private GameObject roof; // Assign your roof in Inspector
 
-    private Button button;
-
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        button = GetComponent<Button>();
-        button.onClick.AddListener(ToggleRoof);
+        if (other.CompareTag("Player"))
+            roof.SetActive(false); // Hide roof when player enters
     }
 
-    private void ToggleRoof()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        roof.SetActive(!roof.activeSelf); // Toggles roof visibility
+        if (other.CompareTag("Player"))
+            roof.SetActive(true); // Show roof when player exits
     }
 }
