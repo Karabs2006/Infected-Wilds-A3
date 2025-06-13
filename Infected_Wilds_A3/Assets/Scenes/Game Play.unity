@@ -11228,8 +11228,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 752264442}
-        m_TargetAssemblyTypeName: CabinDialogue, Assembly-CSharp
+      - m_Target: {fileID: 2107334608}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
         m_MethodName: Next
         m_Mode: 1
         m_Arguments:
