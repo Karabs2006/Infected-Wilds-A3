@@ -16,6 +16,8 @@ public class Tower : MonoBehaviour
     public GameObject Wolf;
 
     public GameObject dialogue2;
+
+    public GameObject dialogue3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 
@@ -23,6 +25,7 @@ public class Tower : MonoBehaviour
     {
         dialogue.SetActive(false);
         dialogue2.SetActive(false);
+        dialogue3.SetActive(false);
         destroyedTower.enabled = false;
         Wolf.SetActive(false);
     }
@@ -30,6 +33,13 @@ public class Tower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Wolf == null)
+        {
+            Time.timeScale = 0f;
+            dialogue3.SetActive(true);
+
+        }
+
 
     }
 
@@ -61,7 +71,13 @@ public class Tower : MonoBehaviour
     {
         Time.timeScale = 1f;
         dialogue2.SetActive(false);
-
         Destroy(campCollider);
+    }
+
+    public void end()
+    {
+        Time.timeScale = 1f;
+        dialogue3.SetActive(false);
+
     }
 }
