@@ -59,9 +59,6 @@ public class Player : MonoBehaviour
 
     [SerializeField] private AudioClip hurtSound;
     [SerializeField] private AudioSource audioSource;
-
-   
-
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -70,6 +67,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+     
         MovePlayer(); //This is code used in order to rotate the player according to the mouse position
 
         /* 
@@ -94,7 +92,6 @@ public class Player : MonoBehaviour
 
         */
 
-        
     }
 
     IEnumerator AttackAnim()
@@ -116,53 +113,54 @@ public class Player : MonoBehaviour
         {
             movePosition.y += 1; //The Player moves upwards
             _animator.SetBool("IsMoving", true);
-
         }
-
-        else
-        {
-            _animator.SetBool("IsMoving", false);
-        }
-
+        
 
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            movePosition.y -= 1; //The Player moves downwards
+            movePosition.y -= 1;
+             //The Player moves downwards
         }
-
+        
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            movePosition.x -= 1; //The Player moves left
+            movePosition.x -= 1;
+             //The Player moves left
         }
-
+        
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            movePosition.x += 1; //The Player moves right
+            movePosition.x += 1;
+            //The Player moves right
         }
+
 
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            movePosition.x -= 1; //The Player moves left
+            movePosition.x -= 1;
         }
+
+       
 
         if (Input.GetKey(KeyCode.E))
         {
             StartCoroutine(AttackAnim());
             //The Player moves left
         }
+        else
+        {
+            _animator.SetBool("IsMoving", false);
+           
+        }
 
         
-
-
-
         Player1.transform.position += movePosition.normalized * Time.deltaTime;
 
         _rigidbody.linearVelocity = movePosition.normalized * _speed;
         _animator.SetBool("IsMoving", movePosition != Vector3.zero); //Script for Movement. When the player releases a movement key, the movement animation will stop playing
-
 
     }
 
@@ -237,9 +235,7 @@ public class Player : MonoBehaviour
             if (PlayerHealth <= 0) //When the Player's health reaches 0, they will be given the option to Restart or Quit
             {
                 SceneManager.LoadScene("GameOverScreen");
-
             }
-
 
         }
         
