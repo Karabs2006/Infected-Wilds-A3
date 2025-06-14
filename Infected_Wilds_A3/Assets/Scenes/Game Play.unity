@@ -8422,8 +8422,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u201COh SHIT!!! This wolf looks different even compared to the other
-    ones\u2026You must be the one breaking everything\u2026 well I\u2019m more of
-    a collecors item to be honest.\u201D"
+    ones. You must be the one breaking everything. Well I\u2019m more of a collector's
+    item to be honest.\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9754,7 +9754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CI better go investigate where that flare was shot from...Looks life
+  m_text: "\u201CI better go investigate where that flare was shot from...Looks like
     it was shot a bit to the west of the tower\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10680,9 +10680,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CNO NO NO!!!!!... How did this happen\u2026 FUCK! okay okay its getting
-    late , best thing to do right now is get to the outpost up north, I should be
-    able to wait out the night there\u2026\u201D"
+  m_text: "\u201CNO NO NO!!! How did this happen? FUCK! Okay...its getting late,
+    best thing to do right now is get to the outpost up north. I should be able to
+    wait out the night there.\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17440,8 +17440,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"Okay, right now my last hope is the Macmillan cabin north east of here,
-    I just got to find the key and God forbid this thing beats me there\u2026\u201D"
+  m_text: "\"Okay, right now my last hope is the Macmillan Cabin north east of here.
+    I just gotta find the key. God forbid this thing beats me there\u2026\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24625,7 +24625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CYou have got to be shitting me\u2026 damn it, something doesn\u2019t
+  m_text: "\u201CYou have got to be shitting me. Damn it, something doesn\u2019t
     want me safe, but I don\u2019t think even a bear is capable of this\u2026\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30289,9 +30289,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CThank god\u2026 not bad Mr Macmillan, pretty cosy place you got
-    here. I always wondered what that guy worked on in here\u2026best check out his
-    desk before settling in for the night.\u201D"
+  m_text: "\u201C (Sigh) Thank God. Not bad Mr Macmillan, pretty cosy place you got
+    here. I always wondered what that guy worked on in here. Best check out his desk
+    before settling in for the night.\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30891,7 +30891,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CWhat the fuck was that wolf\u2026I better head back to the tower
+  m_text: "\u201CWhat the hell was that wolf\u2026I better head back to the tower
     and report this to central\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
