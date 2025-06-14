@@ -3,7 +3,7 @@ using UnityEngine;
 public class Dialogue4 : MonoBehaviour
 {
 
-    public Collider2D collider2D;
+    public Collider2D dialogueCollider;
 
     public GameObject dialogue;
 
@@ -23,7 +23,7 @@ public class Dialogue4 : MonoBehaviour
     {
         Time.timeScale = 1f;
         dialogue.SetActive(false);
-        Destroy(collider2D);
+        Destroy(dialogueCollider);
             
     }
 

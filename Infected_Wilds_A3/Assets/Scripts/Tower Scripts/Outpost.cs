@@ -5,7 +5,7 @@ public class Outpost : MonoBehaviour
     public GameObject dialogue2;
     public GameObject dialogue3;
 
-    public Collider2D collider;
+    public Collider2D outpostCollider;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -45,7 +45,7 @@ public class Outpost : MonoBehaviour
 
         Time.timeScale = 1f;
         dialogue3.SetActive(false);
-        Destroy(collider);
+        Destroy(outpostCollider);
        
   
 
