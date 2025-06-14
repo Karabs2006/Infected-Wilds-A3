@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: dc3ca6d86322286438080af20e08edc7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8352785781297186112
+    second: Destroyed_Campsite_0
+  - first:
+      213: -1960895896841378047
+    second: Destroyed_Campsite_1
+  - first:
+      213: -5679877258700490626
+    second: Destroyed_Campsite_2
+  - first:
+      213: 5923181079847982358
+    second: Destroyed_Campsite_3
+  - first:
+      213: 8315426448385991077
+    second: Destroyed_Campsite_4
+  - first:
+      213: 2784242628057833430
+    second: Destroyed_Campsite_5
+  - first:
+      213: -2424074607911362268
+    second: Destroyed_Campsite_6
+  - first:
+      213: 2829351064351683578
+    second: Destroyed_Campsite_7
+  - first:
+      213: 4286643682921488406
+    second: Destroyed_Campsite_8
+  - first:
+      213: -7058598963755318261
+    second: Destroyed_Campsite_9
+  - first:
+      213: 3566323313582717641
+    second: Destroyed_Campsite_10
+  - first:
+      213: 5689150882134661542
+    second: Destroyed_Campsite_11
+  - first:
+      213: 1693635393497689032
+    second: Destroyed_Campsite_12
+  - first:
+      213: -2897557797012295571
+    second: Destroyed_Campsite_13
+  - first:
+      213: -2572898770924855803
+    second: Destroyed_Campsite_14
+  - first:
+      213: -5914914287391013992
+    second: Destroyed_Campsite_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Destroyed_Campsite_0
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1066
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0450723c96e0be370800000000000000
+      internalID: 8352785781297186112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 989
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107af33329f79c4e0800000000000000
+      internalID: -1960895896841378047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_2
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 420
+        width: 828
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78765bf9b50d21b0800000000000000
+      internalID: -5679877258700490626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_3
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 872
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61557ac4fcd533250800000000000000
+      internalID: 5923181079847982358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_4
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 382
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a16feb3c44566370800000000000000
+      internalID: 8315426448385991077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_5
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 252
+        width: 208
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df13ed2bed93a620800000000000000
+      internalID: 2784242628057833430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_6
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 369
+        width: 67
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4212666ccf4fb5ed0800000000000000
+      internalID: -2424074607911362268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_7
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 330
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af33e8f6dcfd34720800000000000000
+      internalID: 2829351064351683578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_8
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 252
+        width: 66
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610253fc7b73d7b30800000000000000
+      internalID: 4286643682921488406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_9
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 291
+        width: 41
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b048c69f3a1da0e90800000000000000
+      internalID: -7058598963755318261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_10
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 129
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9caba4498202e7130800000000000000
+      internalID: 3566323313582717641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_11
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 149
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a99c3bb59ce3fe40800000000000000
+      internalID: 5689150882134661542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_12
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 136
+        width: 119
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb6578ca60018710800000000000000
+      internalID: 1693635393497689032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_13
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 123
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d603be8198ec9c7d0800000000000000
+      internalID: -2897557797012295571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_14
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 20
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e1cfb133a3b4cd0800000000000000
+      internalID: -2572898770924855803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Destroyed_Campsite_15
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8930d2f4bc00aeda0800000000000000
+      internalID: -5914914287391013992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Destroyed_Campsite_0: 8352785781297186112
+      Destroyed_Campsite_1: -1960895896841378047
+      Destroyed_Campsite_10: 3566323313582717641
+      Destroyed_Campsite_11: 5689150882134661542
+      Destroyed_Campsite_12: 1693635393497689032
+      Destroyed_Campsite_13: -2897557797012295571
+      Destroyed_Campsite_14: -2572898770924855803
+      Destroyed_Campsite_15: -5914914287391013992
+      Destroyed_Campsite_2: -5679877258700490626
+      Destroyed_Campsite_3: 5923181079847982358
+      Destroyed_Campsite_4: 8315426448385991077
+      Destroyed_Campsite_5: 2784242628057833430
+      Destroyed_Campsite_6: -2424074607911362268
+      Destroyed_Campsite_7: 2829351064351683578
+      Destroyed_Campsite_8: 4286643682921488406
+      Destroyed_Campsite_9: -7058598963755318261
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
