@@ -18,6 +18,7 @@ public class WeaponSwitch : MonoBehaviour
     public GameObject pistolPrefab;
     public PlayerShooting playerShooting;
     public Shotgun shotgun;
+    
 
     // Update is called once per frame
     void Update()
@@ -29,6 +30,10 @@ public class WeaponSwitch : MonoBehaviour
                 currentGun.sprite = oldGun;
                 currentPlayer.sprite = playerPistol;
                 playerShooting.bulletPrefab = pistolPrefab;
+                playerShooting.isPistolActive = true;
+                playerShooting.count.text = $"{playerShooting.pistolAmmo}";
+               
+
 
 
             }
@@ -38,6 +43,13 @@ public class WeaponSwitch : MonoBehaviour
                 currentGun.sprite = newGun;
                 currentPlayer.sprite = playerShotgun;
                 playerShooting.bulletPrefab = shotgunPrefab;
+                playerShooting.isPistolActive = false;
+                playerShooting.count.text = $"{playerShooting.shotgunBullets}";
+               
+
+               
+
+                
 
             }
         }

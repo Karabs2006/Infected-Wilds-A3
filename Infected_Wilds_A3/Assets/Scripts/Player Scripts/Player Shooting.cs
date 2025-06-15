@@ -16,7 +16,12 @@ public class PlayerShooting : MonoBehaviour
     private AudioSource audioSource;
 
     public TMP_Text count;
-    public int bulletCount = 64;
+    public int bulletCount;
+
+    public int pistolAmmo;
+    public int shotgunBullets = 32;
+
+    public bool isPistolActive;
 
     private void Awake()
     {
@@ -29,19 +34,31 @@ public class PlayerShooting : MonoBehaviour
 
     private void Start()
     {
-        count.text = $"{bulletCount}";
+        isPistolActive = true;
     }
 
 
     private void Update()
     {
-        if (Input.GetMouseButton(0) && Time.time >= nextFireTime && bulletCount>0)
-        {
-            Shoot();
-            bulletCount--;
-            count.text = $"{bulletCount}";
-            nextFireTime = Time.time + fireRate;
+        
 
+     if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
+        {
+            if (isPistolActive && pistolAmmo > 0)
+            {
+                Shoot();
+                pistolAmmo--;
+                count.text = $"{pistolAmmo}";
+                nextFireTime = Time.time + fireRate;
+
+            }
+            else if (!isPistolActive && shotgunBullets > 0)
+            {
+                Shoot();
+                shotgunBullets--;
+                count.text = $"{shotgunBullets}";
+                nextFireTime = Time.time + fireRate;
+            }
         }
     }
 
