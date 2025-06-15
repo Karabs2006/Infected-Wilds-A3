@@ -35,6 +35,7 @@ public class Dialogue4 : MonoBehaviour
         Time.timeScale = 1f;
         dialogue.SetActive(false);
         Destroy(dialogueCollider);
+    
 
     }
     

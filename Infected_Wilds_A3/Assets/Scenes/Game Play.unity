@@ -16142,7 +16142,7 @@ Transform:
   m_GameObject: {fileID: 305561394}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -164.44, y: -111.51, z: -10}
+  m_LocalPosition: {x: -171.68, y: -98.83, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25386,7 +25386,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -164.44, y: -111.51, z: -10}
+  m_LocalPosition: {x: -171.68, y: -98.83, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32197,7 +32197,6 @@ GameObject:
   - component: {fileID: 846536669}
   - component: {fileID: 846536668}
   - component: {fileID: 846536667}
-  - component: {fileID: 846536666}
   - component: {fileID: 846536670}
   m_Layer: 0
   m_Name: Shotgun
@@ -32206,21 +32205,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &846536666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846536665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe0fced7cb5af647a388375d1a3478d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  oldGun: {fileID: 0}
-  newGun: {fileID: 0}
-  currentGun: {fileID: 0}
 --- !u!60 &846536667
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -32366,7 +32350,7 @@ Transform:
   m_GameObject: {fileID: 846536665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -162.81, y: -105.97, z: -4.644345}
+  m_LocalPosition: {x: -164.23, y: -95.15, z: -4.644345}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32384,8 +32368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fba0b8e0d2df7542b5db5c5bf53cca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerShooting: {fileID: 0}
+  playerShooting: {fileID: 1814430100}
   dialogue: {fileID: 427884887}
+  shotgunPrefab: {fileID: 6875756661045148516, guid: 9b9621b2319901b4ebe44481976cf37a, type: 3}
 --- !u!4 &849260322 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8718218262499238763, guid: 45ff0b345e848404f83076baa96a8536, type: 3}
@@ -53959,6 +53944,7 @@ GameObject:
   - component: {fileID: 1814430101}
   - component: {fileID: 1814430102}
   - component: {fileID: 1814430103}
+  - component: {fileID: 1814430104}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -54081,7 +54067,7 @@ Transform:
   m_GameObject: {fileID: 1814430093}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -164.44, y: -111.51, z: 0}
+  m_LocalPosition: {x: -171.68, y: -98.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -54212,6 +54198,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 187544417}
   text: {fileID: 806270440}
+--- !u!114 &1814430104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814430093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe0fced7cb5af647a388375d1a3478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oldGun: {fileID: 8329500759765942061, guid: f4c9b288953710d4cbf03e9124415f3e, type: 3}
+  newGun: {fileID: -5940403142056286169, guid: f4c9b288953710d4cbf03e9124415f3e, type: 3}
+  currentPlayer: {fileID: 1814430096}
+  playerPistol: {fileID: 8329500759765942061, guid: f4c9b288953710d4cbf03e9124415f3e, type: 3}
+  playerShotgun: {fileID: 1275589539659018210, guid: a88709ec7bbf24b479c90f97545958ae, type: 3}
+  currentGun: {fileID: 2120738917}
+  shotgunPrefab: {fileID: 6875756661045148516, guid: 9b9621b2319901b4ebe44481976cf37a, type: 3}
+  pistolPrefab: {fileID: 949112715027248167, guid: 5ef4c8c6cfd9cb84b9a2a420875645cc, type: 3}
+  playerShooting: {fileID: 1814430100}
 --- !u!1001 &1818080030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63447,8 +63454,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 846536670}
-        m_TargetAssemblyTypeName: Shotgun, Assembly-CSharp
+      - m_Target: {fileID: 752264444}
+        m_TargetAssemblyTypeName: Dialogue4, Assembly-CSharp
         m_MethodName: Next
         m_Mode: 1
         m_Arguments:

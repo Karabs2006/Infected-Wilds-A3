@@ -5,6 +5,12 @@ public class Shotgun : MonoBehaviour
     public PlayerShooting playerShooting;
 
     public GameObject dialogue;
+
+    public GameObject shotgunPrefab;
+
+   
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,9 +27,10 @@ public class Shotgun : MonoBehaviour
     {
         if (trigger.CompareTag("Player"))
         {
-            Time.timeScale = 0f;
-            dialogue.SetActive(true);
+            //Time.timeScale = 0f;
+            //dialogue.SetActive(true);
             Destroy(gameObject);
+            
         }
 
     }
