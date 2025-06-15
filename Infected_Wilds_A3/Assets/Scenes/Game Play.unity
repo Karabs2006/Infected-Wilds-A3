@@ -32370,7 +32370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerShooting: {fileID: 1814430100}
   dialogue: {fileID: 427884887}
-  shotgunPrefab: {fileID: 6875756661045148516, guid: 9b9621b2319901b4ebe44481976cf37a, type: 3}
+  foundShotgun: 0
 --- !u!4 &849260322 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8718218262499238763, guid: 45ff0b345e848404f83076baa96a8536, type: 3}
@@ -54219,6 +54219,7 @@ MonoBehaviour:
   shotgunPrefab: {fileID: 6875756661045148516, guid: 9b9621b2319901b4ebe44481976cf37a, type: 3}
   pistolPrefab: {fileID: 949112715027248167, guid: 5ef4c8c6cfd9cb84b9a2a420875645cc, type: 3}
   playerShooting: {fileID: 1814430100}
+  shotgun: {fileID: 846536670}
 --- !u!1001 &1818080030
 PrefabInstance:
   m_ObjectHideFlags: 0

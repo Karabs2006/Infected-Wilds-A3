@@ -15,31 +15,31 @@ public class WeaponSwitch : MonoBehaviour
     [SerializeField]
     private Image currentGun;
     public GameObject shotgunPrefab;
-
-    
     public GameObject pistolPrefab;
-
     public PlayerShooting playerShooting;
+    public Shotgun shotgun;
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (shotgun.foundShotgun)
         {
-            currentGun.sprite = oldGun;
-            currentPlayer.sprite = playerPistol;
-            playerShooting.bulletPrefab = pistolPrefab;
+            if (Input.GetKey(KeyCode.Alpha1))
+            {
+                currentGun.sprite = oldGun;
+                currentPlayer.sprite = playerPistol;
+                playerShooting.bulletPrefab = pistolPrefab;
 
-            
-        }
 
-        if (Input.GetKey(KeyCode.Alpha2))
-        {
-            currentGun.sprite = newGun;
-            currentPlayer.sprite = playerShotgun;
-            playerShooting.bulletPrefab = shotgunPrefab;
-            
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2))
+            {
+                currentGun.sprite = newGun;
+                currentPlayer.sprite = playerShotgun;
+                playerShooting.bulletPrefab = shotgunPrefab;
+
+            }
         }
 
         

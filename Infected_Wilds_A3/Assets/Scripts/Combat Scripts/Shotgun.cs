@@ -6,10 +6,7 @@ public class Shotgun : MonoBehaviour
 
     public GameObject dialogue;
 
-    public GameObject shotgunPrefab;
-
-   
-
+    public bool foundShotgun;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +26,7 @@ public class Shotgun : MonoBehaviour
         {
             //Time.timeScale = 0f;
             //dialogue.SetActive(true);
+            foundShotgun = true;
             Destroy(gameObject);
             
         }
