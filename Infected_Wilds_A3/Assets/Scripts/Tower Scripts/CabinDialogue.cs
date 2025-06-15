@@ -4,6 +4,8 @@ public class CabinDialogue : MonoBehaviour
 {
     public GameObject dialogue;
 
+    public Collider2D dialogueCollider;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,12 +13,7 @@ public class CabinDialogue : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-
+    
     void OnTriggerEnter2D(Collider2D trigger)
     {
         if (trigger.CompareTag("Player"))
@@ -32,7 +29,7 @@ public class CabinDialogue : MonoBehaviour
 
         Time.timeScale = 1f;
         dialogue.SetActive(false);
-        Destroy(gameObject);
+        Destroy(dialogueCollider);
 
 
     }

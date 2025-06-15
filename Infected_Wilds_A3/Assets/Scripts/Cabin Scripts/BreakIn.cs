@@ -6,6 +6,8 @@ public class BreakIn : MonoBehaviour
     public GameObject dialogue2;
 
     public GameObject dialogue3;
+    public GameObject dialogue4;
+
 
     [SerializeField] private AudioClip breakInSound;
     [SerializeField] private AudioSource audioSource;
@@ -14,18 +16,32 @@ public class BreakIn : MonoBehaviour
 
     public GameObject AlphaWolf;
 
+    bool gameEnd;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         dialogue.SetActive(false);
         dialogue2.SetActive(false);
         dialogue3.SetActive(false);
+        dialogue4.SetActive(false);
         AlphaWolf.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (AlphaWolf == null)
+        {
+            dialogue4.SetActive(true);
+        }
+
+        if (gameEnd)
+        {
+
+            dialogue4.SetActive(false);
+            this.enabled = false;
+        }
 
     }
 
@@ -66,11 +82,17 @@ public class BreakIn : MonoBehaviour
         dialogue3.SetActive(false);
         Destroy(dialogue3);
         Destroy(breakCollider);
-        
-
-    
 
     }
+
+    public void GameEnd()
+    {
+        Time.timeScale = 1f;
+        gameEnd = true;
+
+    }
+    
+
 
     }
 

@@ -241,8 +241,8 @@ public class Player : MonoBehaviour
         
         if (collision.gameObject.name == "Alpha Wolf")
         {
-            PlayerHealth = PlayerHealth - 65;
-            healthBarUI.Damage(65);
+            PlayerHealth = PlayerHealth - 30;
+            healthBarUI.Damage(30);
             audioSource.PlayOneShot(hurtSound);
             StartCoroutine(FlashRoutine());
 
