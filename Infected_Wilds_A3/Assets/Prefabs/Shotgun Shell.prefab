@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7580236315710470813}
   - component: {fileID: -3275550594818432376}
   - component: {fileID: -9206935810567672817}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shotgun Shell
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -7323018205651570021, guid: f4c9b288953710d4cbf03e9124415f3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
