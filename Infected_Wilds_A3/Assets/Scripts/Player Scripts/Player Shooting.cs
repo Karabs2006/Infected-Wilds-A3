@@ -14,14 +14,21 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private float shootVolume = 0.5f;
     private float nextFireTime;
     private AudioSource audioSource;
-
     public TMP_Text count;
     public int bulletCount;
-
     public int pistolAmmo;
     public int shotgunBullets = 32;
-
     public bool isPistolActive;
+
+    public PauseGame pauseGame;
+
+
+
+
+
+
+
+
 
     private void Awake()
     {
@@ -40,38 +47,42 @@ public class PlayerShooting : MonoBehaviour
 
     private void Update()
     {
-        
-
-     if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
+       
+        if (pauseGame.isGamePlaying)
         {
-            if (isPistolActive && pistolAmmo > 0)
+            if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
             {
-                Shoot();
-                pistolAmmo--;
-                count.text = $"{pistolAmmo}";
-                nextFireTime = Time.time + fireRate;
+                if (isPistolActive && pistolAmmo > 0)
+                {
+                    Shoot();
+                    pistolAmmo--;
+                    count.text = $"{pistolAmmo}";
+                    nextFireTime = Time.time + fireRate;
 
-            }
-            else if (!isPistolActive && shotgunBullets > 0)
-            {
-                Shoot();
-                shotgunBullets--;
-                count.text = $"{shotgunBullets}";
-                nextFireTime = Time.time + fireRate;
+                }
+                else if (!isPistolActive && shotgunBullets > 0)
+                {
+                    Shoot();
+                    shotgunBullets--;
+                    count.text = $"{shotgunBullets}";
+                    nextFireTime = Time.time + fireRate;
+                }
             }
         }
     }
 
     private void Shoot()
     {
-        // Create bullet
-        GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, transform.rotation);
-        bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.up * bulletSpeed;
+            // Create bullet
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, transform.rotation);
+            bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.up * bulletSpeed;
 
-        // Play shoot sound
-        if (shootSound != null)
-        {
-            audioSource.PlayOneShot(shootSound, shootVolume);
-        }
+
+            // Play shoot sound
+            if (shootSound != null)
+            {
+                audioSource.PlayOneShot(shootSound, shootVolume);
+            }
+        
     }
 }

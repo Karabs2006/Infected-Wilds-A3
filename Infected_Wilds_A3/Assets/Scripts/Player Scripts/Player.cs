@@ -44,25 +44,20 @@ public class Player : MonoBehaviour
     public Rigidbody2D _rigidbody;
     public GameObject Player1;
     public float _speed;
-
     public float PlayerHealth = 100;
     int damage = 10;
-    public GameObject bulletPrefab;
-    public Transform bulletSpawnPoint;
-    public float bulletSpeed = 20f;
     private Animator _animator;
-
     public HealthBarUI healthBarUI;
-
     public Collider2D Hitbox;
     public SpriteRenderer player;
 
     [SerializeField] private AudioClip hurtSound;
     [SerializeField] private AudioSource audioSource;
+
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
-
     }
 
     void Update()
@@ -143,7 +138,6 @@ public class Player : MonoBehaviour
             movePosition.x -= 1;
         }
 
-       
 
         if (Input.GetKey(KeyCode.E))
         {
@@ -153,7 +147,7 @@ public class Player : MonoBehaviour
         else
         {
             _animator.SetBool("IsMoving", false);
-           
+
         }
 
         
@@ -220,7 +214,6 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("GameOverScreen");
             }
 
-
         }
 
         if (collision.gameObject.name == "Bear(Clone)")
@@ -252,16 +245,8 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("GameOverScreen");
 
             }
-
-
         }
 
-
-
     }
-
-
-
-
 
 }

@@ -7,10 +7,14 @@ public class PauseGame : MonoBehaviour
     public GameObject pauseMenu;
 
     public GameObject text;
+
+    public bool isGamePlaying;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         pauseMenu.SetActive(false);
+        isGamePlaying = true;
+
 
     }
 
@@ -21,6 +25,7 @@ public class PauseGame : MonoBehaviour
         {
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
+            isGamePlaying = false;
             StartCoroutine(FlashRoutine());
         }
 
@@ -41,8 +46,8 @@ public class PauseGame : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1f;
+        isGamePlaying = true;
         pauseMenu.SetActive(false);
-
 
     }
 

@@ -10,13 +10,9 @@ public class Bullet : MonoBehaviour
     public float speed = 15f;
     public int damage = 25;
     public float lifetime = 2f; // Auto-destroy after time
-
     private Rigidbody2D rb;
 
-    public TMP_Text count;
-    public int bullets;
     
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

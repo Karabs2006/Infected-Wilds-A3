@@ -32,10 +32,7 @@ public class WeaponSwitch : MonoBehaviour
                 playerShooting.bulletPrefab = pistolPrefab;
                 playerShooting.isPistolActive = true;
                 playerShooting.count.text = $"{playerShooting.pistolAmmo}";
-               
-
-
-
+             
             }
 
             if (Input.GetKey(KeyCode.Alpha2))
@@ -45,15 +42,9 @@ public class WeaponSwitch : MonoBehaviour
                 playerShooting.bulletPrefab = shotgunPrefab;
                 playerShooting.isPistolActive = false;
                 playerShooting.count.text = $"{playerShooting.shotgunBullets}";
-               
-
-               
-
-                
-
+            
             }
         }
 
-        
     }
 }
