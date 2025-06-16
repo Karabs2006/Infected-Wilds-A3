@@ -22,14 +22,6 @@ public class PlayerShooting : MonoBehaviour
 
     public PauseGame pauseGame;
 
-
-
-
-
-
-
-
-
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7580236315710470813}
   - component: {fileID: -3275550594818432376}
   - component: {fileID: -9206935810567672817}
+  - component: {fileID: 1913657696315478349}
   m_Layer: 8
   m_Name: Shotgun Shell
   m_TagString: Bullet
@@ -162,3 +163,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.01, y: 1.48}
   m_EdgeRadius: 0
+--- !u!114 &1913657696315478349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6875756661045148516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c382e002977555c4c92fbb45a99dc6f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 25
+  damage: 50
+  lifetime: 2
