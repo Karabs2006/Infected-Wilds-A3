@@ -1,22 +1,17 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class BreakIn : MonoBehaviour
 {
     public GameObject dialogue;
     public GameObject dialogue2;
-
     public GameObject dialogue3;
     public GameObject dialogue4;
-
-
     [SerializeField] private AudioClip breakInSound;
     [SerializeField] private AudioSource audioSource;
-
     public Collider2D breakCollider;
-
     public GameObject AlphaWolf;
-
     bool gameEnd;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,7 +33,6 @@ public class BreakIn : MonoBehaviour
 
         if (gameEnd)
         {
-
             dialogue4.SetActive(false);
             this.enabled = false;
         }
@@ -89,12 +83,17 @@ public class BreakIn : MonoBehaviour
     {
         Time.timeScale = 1f;
         gameEnd = true;
+        SceneManager.LoadScene("GameEnd");
+    }
+
+    
+
 
     }
     
 
 
-    }
+    
 
 
 

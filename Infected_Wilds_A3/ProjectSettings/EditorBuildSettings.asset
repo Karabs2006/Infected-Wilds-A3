@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transition.unity
     guid: b77a5f963c6ae5a4f9bff9b344e9db11
+  - enabled: 1
+    path: Assets/Scenes/Quote.unity
+    guid: d3ae12a747f78e54f9bc94f217d83245
+  - enabled: 1
+    path: Assets/Scenes/GameEnd.unity
+    guid: 67c8ba2a9b1e2ac42931664ee3a5765f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
