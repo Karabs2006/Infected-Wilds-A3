@@ -23,9 +23,9 @@ public class PlayerAwarenessController : MonoBehaviour
 
     [System.Obsolete]
     private void Awake()
-    {
-        _player = FindObjectOfType<Player>().transform;
-    }
+        {
+            _player = FindObjectOfType<Player>().transform;
+        }
 
     // Update is called once per frame
     void Update()

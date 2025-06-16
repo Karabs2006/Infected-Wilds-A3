@@ -30,14 +30,11 @@ Code version: N/A
 Availability: https://www.youtube.com/watch?v=BLfNP4Sc_iA
 */
 
-
-
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.SceneManagement;
-
 
 public class Player : MonoBehaviour
 {
@@ -65,11 +62,7 @@ public class Player : MonoBehaviour
      
         MovePlayer(); //This is code used in order to rotate the player according to the mouse position
 
-        /* 
-
-        Reference: https://www.youtube.com/watch?v=9_i6S_rDZuA
-
-        */
+        //Reference: https://www.youtube.com/watch?v=9_i6S_rDZuA
 
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = Mathf.Abs(Camera.main.transform.position.z);
@@ -82,11 +75,9 @@ public class Player : MonoBehaviour
         /* 
         This code is used for the shooting mechanic in the game. The bullet fires when the Left Mouse button is clicked 
         and shoots from where the player is facing.
-
         Reference: https://www.youtube.com/watch?v=Ryd_b8QDQ8A&t=233s
 
         */
-
     }
 
     IEnumerator AttackAnim()
@@ -99,8 +90,8 @@ public class Player : MonoBehaviour
     }
 
 
-    void MovePlayer()
-    {//This is the method used for player movement.
+    void MovePlayer() //This is the method used for player movement.
+    {
 
         Vector3 movePosition = Vector3.zero;
 
@@ -131,13 +122,10 @@ public class Player : MonoBehaviour
             //The Player moves right
         }
 
-
-
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             movePosition.x -= 1;
         }
-
 
         if (Input.GetKey(KeyCode.E))
         {
@@ -149,7 +137,6 @@ public class Player : MonoBehaviour
             _animator.SetBool("IsMoving", false);
 
         }
-
         
         Player1.transform.position += movePosition.normalized * Time.deltaTime;
 

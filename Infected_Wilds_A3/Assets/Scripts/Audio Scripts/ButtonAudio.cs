@@ -1,9 +1,6 @@
 using UnityEngine;
-
 public class Audio : MonoBehaviour
 {
-
-
     public AudioClip[] Clips;
     public AudioSource audioSource;
     public ButtonSoundType soundType;
@@ -14,13 +11,9 @@ public class Audio : MonoBehaviour
         Play,
         Scifi
     }
-
-   
-
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        
     }
 
      public void PlaySound(ButtonSoundType soundType)
@@ -39,7 +32,6 @@ public class Audio : MonoBehaviour
             audioSource.PlayOneShot(Clips[2]);
             break;
     }
-
 
     
     }

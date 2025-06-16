@@ -6,11 +6,8 @@ using Unity.VisualScripting;
 
 public class Melee : MonoBehaviour
 {
-
     public Animator anim;
-
     public int hitDamage;
-
     public int EnemyHealth = 100;
     
     

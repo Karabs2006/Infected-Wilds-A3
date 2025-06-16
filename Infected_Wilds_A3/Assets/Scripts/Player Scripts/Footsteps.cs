@@ -5,7 +5,6 @@ public class WASDFootsteps : MonoBehaviour
     [Header("Audio Settings")]
     [SerializeField] private AudioClip[] footstepClips;
     [SerializeField] private float stepDelay = 0.4f; // Time between steps
-
     private AudioSource audioSource;
     private float stepCooldown;
     private bool wasMoving;
@@ -17,10 +16,11 @@ public class WASDFootsteps : MonoBehaviour
 
     void Update()
     {
-        bool isMoving = Input.GetKey(KeyCode.W) ||
-                       Input.GetKey(KeyCode.A) ||
-                       Input.GetKey(KeyCode.S) ||
-                       Input.GetKey(KeyCode.D);
+        bool isMoving =
+        Input.GetKey(KeyCode.W) ||
+        Input.GetKey(KeyCode.A) ||
+        Input.GetKey(KeyCode.S) ||
+        Input.GetKey(KeyCode.D);
 
         if (isMoving)
         {

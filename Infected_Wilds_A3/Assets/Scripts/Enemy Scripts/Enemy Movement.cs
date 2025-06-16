@@ -22,10 +22,8 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField]
     private float _speed;
-
     [SerializeField]
     private float _rotationSpeed;
-
     private Rigidbody2D _rigidbody;
     private PlayerAwarenessController _playerAwarenessController;
     private Vector2 _targetDirection;
