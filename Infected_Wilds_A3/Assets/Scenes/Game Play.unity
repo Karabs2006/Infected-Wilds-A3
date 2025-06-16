@@ -53498,7 +53498,7 @@ GameObject:
   - component: {fileID: 1238143855}
   - component: {fileID: 1238143854}
   - component: {fileID: 1238143857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53621,7 +53621,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Sprite: {fileID: -5702788120938566805, guid: cdc80678a964b464a890e5041e3c2d72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -73482,7 +73482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9fd77bee34dc44e83e63c8f856d2a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  _speed: 2
   _rotationSpeed: 70
 --- !u!114 &1865203168
 MonoBehaviour:
@@ -73509,7 +73509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a2a0065c866274abce1bb18d0867e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: 50
+  EnemyHealth: 500
   PlayerDamage: 25
   hitDamage: 0
   enemyScore: 0
