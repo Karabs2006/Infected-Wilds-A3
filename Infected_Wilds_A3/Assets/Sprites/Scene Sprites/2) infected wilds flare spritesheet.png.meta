@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      2) infected wilds flare spritesheet_0: 6138742159355926292
+      2) infected wilds flare spritesheet_1: -308583366985760474
+      2) infected wilds flare spritesheet_2: 1884107855227066479
+      2) infected wilds flare spritesheet_3: 9065126031769293593
+      2) infected wilds flare spritesheet_4: -1012515852472148832
+      2) infected wilds flare spritesheet_5: -3491114748873386381
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
