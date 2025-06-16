@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd7aba0b7e92114fbecce3c4df5a170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Game Play
+  nextSceneName: Controls
   duration: 5
 --- !u!95 &1754576624
 Animator:

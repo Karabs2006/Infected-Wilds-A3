@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Cutscene()
     {  // This method is used to load the level for the first time. (When Play is pressed)
-        SceneManager.LoadScene("Cutscene 1");
+        SceneManager.LoadScene("Quote");
     }
 
     
