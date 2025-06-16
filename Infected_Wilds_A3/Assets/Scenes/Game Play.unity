@@ -72478,7 +72478,7 @@ MonoBehaviour:
   healthBarUI: {fileID: 1294700711}
   Hitbox: {fileID: 588170733}
   player: {fileID: 1814430096}
-  hurtSound: {fileID: 8300000, guid: aa086e45d58f1a74b9c2b75daeb3596b, type: 3}
+  hurtSound: {fileID: 8300000, guid: b6a1ac42e424a814f9041e5628da2b17, type: 3}
   audioSource: {fileID: 1553584535}
 --- !u!50 &1814430095
 Rigidbody2D:
@@ -72658,7 +72658,7 @@ MonoBehaviour:
   bulletSpeed: 20
   fireRate: 0.5
   shootSound: {fileID: 8300000, guid: 338c3a32ad69cb848bdc5452edcb5993, type: 3}
-  shootVolume: 0.1
+  shootVolume: 2
   count: {fileID: 1043653758}
   bulletCount: 0
   pistolAmmo: 47
@@ -72840,7 +72840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepClips:
   - {fileID: 8300000, guid: 5d0dc296f21d63c4bbf2a5257c550a6d, type: 3}
-  stepDelay: 0.4
+  stepDelay: 0.2
 --- !u!4 &1817426516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5715461835347303457, guid: fdfd103696f61d44f94ff84e0fc74618, type: 3}
