@@ -5,7 +5,7 @@ public class PlayerShooting : MonoBehaviour
 {
     [Header("Shooting Settings")]
     [SerializeField] public GameObject bulletPrefab;
-    [SerializeField] private Transform bulletSpawnPoint;
+    [SerializeField] public Transform bulletSpawnPoint;
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float fireRate = 0.5f;
 

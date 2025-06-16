@@ -9,6 +9,8 @@ public class WeaponSwitch : MonoBehaviour
     public Sprite oldGun;
     public Sprite newGun;
     public SpriteRenderer currentPlayer;
+
+    public GameObject shotGunPlayer;
     public Sprite playerPistol;
     public Sprite playerShotgun;
 
@@ -18,9 +20,16 @@ public class WeaponSwitch : MonoBehaviour
     public GameObject pistolPrefab;
     public PlayerShooting playerShooting;
     public Shotgun shotgun;
-    
+    public Transform spawnPoint;
+    public Transform originalSpawnPoint;
+
 
     // Update is called once per frame
+
+    void Start()
+    {
+        shotGunPlayer.SetActive(false);
+    }
     void Update()
     {
         if (shotgun.foundShotgun)
@@ -28,9 +37,10 @@ public class WeaponSwitch : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha1))
             {
                 currentGun.sprite = oldGun;
-                currentPlayer.sprite = playerPistol;
+                shotGunPlayer.SetActive(false);
                 playerShooting.bulletPrefab = pistolPrefab;
                 playerShooting.isPistolActive = true;
+                playerShooting.bulletSpawnPoint = originalSpawnPoint;
                 playerShooting.count.text = $"{playerShooting.pistolAmmo}";
              
             }
@@ -38,9 +48,10 @@ public class WeaponSwitch : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha2))
             {
                 currentGun.sprite = newGun;
-                currentPlayer.sprite = playerShotgun;
+                shotGunPlayer.SetActive(true);
                 playerShooting.bulletPrefab = shotgunPrefab;
                 playerShooting.isPistolActive = false;
+                playerShooting.bulletSpawnPoint = spawnPoint;
                 playerShooting.count.text = $"{playerShooting.shotgunBullets}";
             
             }
