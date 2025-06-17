@@ -30,8 +30,6 @@ public class DestroyedTower : MonoBehaviour
 
     }
 
-
-
     void OnTriggerEnter2D(Collider2D trigger)
     {
         if (trigger.CompareTag("Player"))
@@ -41,7 +39,6 @@ public class DestroyedTower : MonoBehaviour
 
         }
     }
-
 
     public void Next()
     {
