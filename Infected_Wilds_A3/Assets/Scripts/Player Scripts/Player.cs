@@ -47,9 +47,9 @@ public class Player : MonoBehaviour
     public HealthBarUI healthBarUI;
     public Collider2D Hitbox;
     public SpriteRenderer player;
-
     [SerializeField] private AudioClip hurtSound;
     [SerializeField] private AudioSource audioSource;
+    private bool isFlashing = false;
 
 
     private void Awake()
@@ -147,13 +147,17 @@ public class Player : MonoBehaviour
 
     private IEnumerator FlashRoutine()
     {
-        Color originalColor = player.color;
+        if (isFlashing) yield break; // cancel if already flashing
 
+        isFlashing = true;
+
+        Color originalColor = player.color;
         player.color = Color.red;
 
         yield return new WaitForSeconds(0.2f);
 
         player.color = originalColor;
+        isFlashing = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)//This is a basic script for enemy attacks
