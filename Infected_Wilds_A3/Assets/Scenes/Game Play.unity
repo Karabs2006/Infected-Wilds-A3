@@ -5964,54 +5964,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8c2331f3573774085b0dd784717ae7, type: 3}
---- !u!1 &26890593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 26890594}
-  - component: {fileID: 26890595}
-  m_Layer: 0
-  m_Name: Health Kit Spawner (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &26890594
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26890593}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: -0.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1879469199}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &26890595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26890593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 346aadf0b81e50540ba7f59a2de4be02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPrefab: {fileID: 8159186965240545283, guid: f3d46080560ffa546a5c699abae3504e, type: 3}
-  spawnInterval: 20
-  maxHealthKits: 1
-  spawnRadius: 70
 --- !u!4 &27619714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433809986739091453, guid: b4ca9a1320d7f0f4b877d8a73e1dadc7, type: 3}
@@ -19567,7 +19519,7 @@ Transform:
   m_GameObject: {fileID: 305561394}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.0999994, y: -19.2, z: -10}
+  m_LocalPosition: {x: -158.8, y: 50.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21540,7 +21492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1082042378793417843, guid: e942fea552cf2ec4990c28573584063f, type: 3}
   spawnInterval: 5
-  amountOfEnemies: 3
+  amountOfEnemies: 2
   spawnRadius: 2
 --- !u!114 &362939343
 MonoBehaviour:
@@ -21567,7 +21519,7 @@ Transform:
   m_GameObject: {fileID: 362939341}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -148, y: -84.2, z: 0}
+  m_LocalPosition: {x: -174.3, y: -84.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30499,54 +30451,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4372183329385214041, guid: de8c2331f3573774085b0dd784717ae7, type: 3}
   m_PrefabInstance: {fileID: 1710957817}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &489578904
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 489578906}
-  - component: {fileID: 489578905}
-  m_Layer: 0
-  m_Name: Health Kit Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &489578905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489578904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 346aadf0b81e50540ba7f59a2de4be02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPrefab: {fileID: 8159186965240545283, guid: f3d46080560ffa546a5c699abae3504e, type: 3}
-  spawnInterval: 8
-  maxHealthKits: 1
-  spawnRadius: 70
---- !u!4 &489578906
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489578904}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -72.4, y: -1.8000001, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1879469199}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &491939446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8718218262499238763, guid: 45ff0b345e848404f83076baa96a8536, type: 3}
@@ -30922,7 +30826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1082042378793417843, guid: e942fea552cf2ec4990c28573584063f, type: 3}
   spawnInterval: 5
-  amountOfEnemies: 3
+  amountOfEnemies: 2
   spawnRadius: 4
 --- !u!114 &510154330
 MonoBehaviour:
@@ -31291,7 +31195,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.0999994, y: -19.2, z: -10}
+  m_LocalPosition: {x: -158.8, y: 50.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39837,8 +39741,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1082042378793417843, guid: e942fea552cf2ec4990c28573584063f, type: 3}
   spawnInterval: 5
-  amountOfEnemies: 3
-  spawnRadius: 4
+  amountOfEnemies: 2
+  spawnRadius: 6
 --- !u!114 &823952837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67719,7 +67623,7 @@ Transform:
   m_GameObject: {fileID: 1625686356}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -161, y: 84, z: 0}
+  m_LocalPosition: {x: -194.3, y: 80.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70662,7 +70566,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1082042378793417843, guid: e942fea552cf2ec4990c28573584063f, type: 3}
   spawnInterval: 5
   amountOfEnemies: 3
-  spawnRadius: 4
+  spawnRadius: 5
 --- !u!114 &1737600973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72558,7 +72462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1082042378793417843, guid: e942fea552cf2ec4990c28573584063f, type: 3}
   spawnInterval: 5
-  amountOfEnemies: 3
+  amountOfEnemies: 2
   spawnRadius: 4
 --- !u!114 &1795595783
 MonoBehaviour:
@@ -73333,7 +73237,7 @@ Transform:
   m_GameObject: {fileID: 1814430093}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1, y: -19.2, z: 0}
+  m_LocalPosition: {x: -158.8, y: 50.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -75423,7 +75327,7 @@ Transform:
   m_GameObject: {fileID: 1872212544}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -106.6, y: -95, z: 0}
+  m_LocalPosition: {x: -145.3, y: -136.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75888,11 +75792,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 489578906}
   - {fileID: 46206917}
   - {fileID: 816883644}
   - {fileID: 1938937692}
-  - {fileID: 26890594}
   - {fileID: 1625686357}
   - {fileID: 1872212545}
   m_Father: {fileID: 0}
