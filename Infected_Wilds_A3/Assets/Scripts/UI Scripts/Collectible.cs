@@ -6,40 +6,33 @@ using TMPro;
 public class Collectible : MonoBehaviour
 {
     
-    public TMP_Text count;
-
-    void Start()
+   void OnTriggerEnter2D(Collider2D trigger)
     {
-        GameObject ammoText = GameObject.FindWithTag("AmmoText");
-        
-        if (ammoText != null)
+        if (trigger.CompareTag("Player"))
         {
-            count = ammoText.GetComponent<TMP_Text>();
-        }
+            PlayerShooting playerShooting = trigger.GetComponent<PlayerShooting>();
 
-        else
-        {
-            Debug.LogWarning("AmmoText not found!");
-        }
-    }
+           
+                if (playerShooting.isPistolActive && playerShooting.pistolAmmo < 64)
+                {
+                    playerShooting.pistolAmmo += 4;
+                    if (playerShooting.pistolAmmo > 64)
+                        playerShooting.pistolAmmo = 64;
 
-    void OnTriggerEnter2D(Collider2D trigger)
-    {
-        // Check if we hit an enemy
-        PlayerShooting playerShooting = trigger.GetComponent<PlayerShooting>();
+                    playerShooting.count.text = $"{playerShooting.pistolAmmo}";
+                    Destroy(gameObject);
+                }
+                else if (!playerShooting.isPistolActive && playerShooting.shotgunBullets < 32)
+                {
+                    playerShooting.shotgunBullets += 2;
+                    
+                    if (playerShooting.shotgunBullets > 32)
+                    playerShooting.shotgunBullets = 32;
 
-       
-
-        if (trigger.CompareTag("Player") && playerShooting.bulletCount < 64)
-        {
-            count.text = $"{playerShooting.bulletCount += 2}";
-            Destroy(gameObject);
-
-        }
-        else 
-        {
-            Destroy(gameObject);
-
+                    playerShooting.count.text = $"{playerShooting.shotgunBullets}";
+                    Destroy(gameObject);
+                }
+            
         }
     }
 }
