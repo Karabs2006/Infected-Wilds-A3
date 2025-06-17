@@ -63,7 +63,7 @@ public class Tower : MonoBehaviour
         {
             spriteRenderer.sprite = newTower;
             destroyedTower.enabled = true;
-            oldCollider.enabled = false;
+            Destroy(oldCollider);
             Time.timeScale = 0f;
             dialogue.SetActive(true);
 
