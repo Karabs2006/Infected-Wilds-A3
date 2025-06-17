@@ -9,13 +9,11 @@ public class WeaponSwitch : MonoBehaviour
     public Sprite oldGun;
     public Sprite newGun;
     public SpriteRenderer currentPlayer;
-
     public GameObject shotGunPlayer;
     public Sprite playerPistol;
     public Sprite playerShotgun;
-
-    [SerializeField]
-    private Image currentGun;
+    public GameObject shotgunInv;
+    public GameObject pistolInv;
     public GameObject shotgunPrefab;
     public GameObject pistolPrefab;
     public PlayerShooting playerShooting;
@@ -23,20 +21,23 @@ public class WeaponSwitch : MonoBehaviour
     public Transform spawnPoint;
     public Transform originalSpawnPoint;
 
-
-    // Update is called once per frame
-
     void Start()
     {
         shotGunPlayer.SetActive(false);
+        pistolInv.SetActive(true);
+        shotgunInv.SetActive(false);
     }
+
     void Update()
     {
         if (shotgun.foundShotgun)
         {
             if (Input.GetKey(KeyCode.Alpha1))
             {
-                currentGun.sprite = oldGun;
+                //When NUM1 is pressed, the Pistol object in the canvas is initiated, with its respective bullet count
+                
+                pistolInv.SetActive(true);
+                shotgunInv.SetActive(false);
                 shotGunPlayer.SetActive(false);
                 playerShooting.bulletPrefab = pistolPrefab;
                 playerShooting.isPistolActive = true;
@@ -47,7 +48,10 @@ public class WeaponSwitch : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Alpha2))
             {
-                currentGun.sprite = newGun;
+                //When NUM2 is pressed, the Shotgun object in the canvas is initiated, with its respective bullet count
+
+                shotgunInv.SetActive(true);
+                pistolInv.SetActive(false);
                 shotGunPlayer.SetActive(true);
                 playerShooting.bulletPrefab = shotgunPrefab;
                 playerShooting.isPistolActive = false;

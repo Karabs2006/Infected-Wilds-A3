@@ -13,6 +13,8 @@ public class Tower : MonoBehaviour
 
     public Collider2D campCollider;
 
+    public Collider2D oldCollider;
+
     public GameObject Wolf;
 
     public GameObject dialogue2;
@@ -61,6 +63,7 @@ public class Tower : MonoBehaviour
         {
             spriteRenderer.sprite = newTower;
             destroyedTower.enabled = true;
+            oldCollider.enabled = false;
             Time.timeScale = 0f;
             dialogue.SetActive(true);
 
